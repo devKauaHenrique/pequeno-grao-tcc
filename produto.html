@@ -110,7 +110,7 @@
         </section>
         <!--FIM SUBITENS-->
 
-        <section class="h-full w-full flex flex-col md:flex-row md:justify-center items-center py-8 px-4 md:gap-6">
+        <section class="h-full w-full flex flex-col md:flex-row md:justify-center items-center py-8 px-8 md:gap-6">
             <div class="mt-4">
                 <img src="assets/bebeconforto.jpg" alt="Cadeira de Bebê">
             </div>
@@ -122,19 +122,19 @@
                     <i class="fa-regular fa-credit-card text-3xl"></i>
                     <span class="text-lg font-medium">10x de R$15,00</span>
                 </span>
-                <div class="md:flex md:gap-4">
+                <div class="md:flex md:gap-4 w-52">
                     <form class="mt-2">
-                        <input class="border-2 border-black rounded-md px-3 py-2 text-2xl font-semibold" list="cores"
-                            name="cor" placeholder="Selecione uma cor">
+                        <input class="border-2 border-black rounded-md px-3 py-2 text-2xl font-semibold w-72"
+                            list="cores" name="cor" placeholder="Cores">
                         <datalist clas id="cores">
                             <option value="Rosa"></option>
                             <option value="Azul"></option>
                             <option value="Amarelo"></option>
                         </datalist>
                     </form>
-                    <form class="mt-2 w-52">
-                        <input class="border-2 border-black rounded-md px-3 py-2 text-2xl font-semibold" list="tamanho"
-                            name="tamanho" placeholder="Selecione um tamanho">
+                    <form class="mt-2">
+                        <input class="border-2 border-black rounded-md px-3 py-2 text-2xl font-semibold w-72"
+                            list="tamanho" name="tamanho" placeholder="Tamanhos">
                         <datalist clas id="tamanho">
                             <option value="Pequeno"></option>
                             <option value="Médio"></option>
@@ -142,16 +142,16 @@
                         </datalist>
                     </form>
                 </div>
-                <div class="md:flex gap-4 mt-2">
+                <div class="md:flex gap-4 md:mt-2">
                     <div
-                        class="w-52 bg-white text-center font-bold text-2xl text-black border-2 border-black rounded-md flex items-center justify-around py-1">
+                        class=" bg-white text-center font-bold text-2xl text-black border-2 border-black rounded-md flex items-center justify-around py-1 w-72">
                         <button class="text-3xl" id="diminuir">-</button>
                         <span>1</span>
                         <button class="text-2xl" id="adicionar">+</button>
                     </div>
                     <button
-                        class="bg-black text-white text-2xl md:text-xl font-semibold px-5 py-2 rounded-md mt-1 flex items-center justify-center gap-3">
-                        Adicionar ao carrinho
+                        class="bg-black text-white text-2xl md:text-xl font-semibold px-5 py-2 rounded-md mt-2 flex items-center justify-center gap-3 w-72">
+                        Adicionar ao
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                 </div>
