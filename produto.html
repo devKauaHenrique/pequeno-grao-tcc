@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--TAGS PADRÕES-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--TAGS FONTE IMPORTADA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!--TAGS ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--TAG CSS-->
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="styles/header-brecho.css">
+    <link rel="stylesheet" href="styles/brecho.css">
+
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+
+    <title>Cadeira de Bebê</title>
+</head>
+
+<body class="font-poppins overflow-x-hidden">
+
+    <!--INÍCIO SEÇÃO PRINCIPAL-->
+    <section class="w-full h-full">
+        <!--INÍCIO HEADER-->
+        <nav class="bg-black">
+
+            <!--INÍCIO HEADER DESKTOP-->
+            <div class="w-full px-6 md:pl-12">
+                <div class="flex items-center justify-between h-20">
+                    <div class="md:flex md:items-center hidden">
+                        <a href="#" class="flex-shrink-0">
+                            <img class="w-32" src="/assets/Logo_Pequeno_Grão.png" alt="Logo Pequeno Grão">
+                        </a>
+                    </div>
+                    <div>
+                        <button
+                            class="md:hidden bg-white font-semibold text-lg px-4 py-1 rounded-md flex items-center gap-3">
+                            Meu carrinho (0)
+                        </button>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4 text-white text-xl font-medium">
+                        <ul class="flex gap-6 items-center">
+                            <li>
+                                <a href="index.html" class="">Início</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="brecho.html" class="">Brechó</a>
+                            </li>
+                        </ul>
+                        <button
+                            class="bg-white text-black font-semibold text-lg px-4 py-1 rounded-md flex items-center gap-3">
+                            Meu carrinho (0)
+                        </button>
+                    </div>
+
+                    <!--INÍCIO BOTÃO MENU-->
+                    <div class="-mr-2 flex md:hidden text-white">
+                        <button id="btn-menu" type="button"
+                            class="inline-flex items-center justify-center px-4 py-2 rounded-md hover:bg-white hover:text-black focus:outline-none transition duration-300 ease-in-out"
+                            aria-label="Menu" aria-expanded="false">
+                            <i class="fa-solid fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                    <!--FIM BOTÃO MENU-->
+                </div>
+            </div>
+            <!--FIM HEADER DESKTOP-->
+
+            <!--INÍCIO HEADER MOBILE-->
+            <div id="menu"
+                class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
+                <a href="index.html" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
+                <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
+                <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
+                <a href="#"
+                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-black hover:bg-black transition duration-700 ease-in-out">Login</a>
+            </div>
+            <!--FIM HEADER MOBILE-->
+
+        </nav>
+        <!--FIM HEADER-->
+
+        <!--INÍCIO SUBITENS-->
+        <section class="bg-cinza w-full h-20 md:h-10 flex">
+            <div
+                class="text-black font-semibold text-lg flex flex-col md:flex-row justify-center items-center gap-2 w-full">
+                <div class="flex justify-around w-full">
+                    <a href="#">All-Items</a>
+                    <a href="#">Roupinhas</a>
+                    <a href="#">Móveis</a>
+                </div>
+                <div class="flex justify-around w-full">
+                    <a href="#">Decoração</a>
+                    <a href="#">Brinquedos</a>
+                    <a href="#">Enxoval</a>
+                </div>
+            </div>
+        </section>
+        <!--FIM SUBITENS-->
+
+        <section class="h-full w-full flex flex-col md:flex-row md:justify-center items-center py-8 px-4 md:gap-6">
+            <div class="mt-4">
+                <img src="assets/bebeconforto.jpg" alt="Cadeira de Bebê">
+            </div>
+            <div class="mt-4 flex flex-col gap-2">
+                <h1 class="font-bold text-3xl">Cadeira para Bebê</h1>
+                <span class="text-gray-600 line-through text-lg">R$250,00</span>
+                <span class="font-bold text-3xl">R$150,00</span>
+                <span class="flex items-center gap-2">
+                    <i class="fa-regular fa-credit-card text-3xl"></i>
+                    <span class="text-lg font-medium">10x de R$15,00</span>
+                </span>
+                <div class="md:flex md:gap-4">
+                    <form class="mt-2">
+                        <input class="border-2 border-black rounded-md px-3 py-2 text-2xl font-semibold" list="cores"
+                            name="cor" placeholder="Selecione uma cor">
+                        <datalist clas id="cores">
+                            <option value="Rosa"></option>
+                            <option value="Azul"></option>
+                            <option value="Amarelo"></option>
+                        </datalist>
+                    </form>
+                    <form class="mt-2 w-52">
+                        <input class="border-2 border-black rounded-md px-3 py-2 text-2xl font-semibold" list="tamanho"
+                            name="tamanho" placeholder="Selecione um tamanho">
+                        <datalist clas id="tamanho">
+                            <option value="Pequeno"></option>
+                            <option value="Médio"></option>
+                            <option value="Grande"></option>
+                        </datalist>
+                    </form>
+                </div>
+                <div class="md:flex gap-4 mt-2">
+                    <div
+                        class="w-52 bg-white text-center font-bold text-2xl text-black border-2 border-black rounded-md flex items-center justify-around py-1">
+                        <button class="text-3xl" id="diminuir">-</button>
+                        <span>1</span>
+                        <button class="text-2xl" id="adicionar">+</button>
+                    </div>
+                    <button
+                        class="bg-black text-white text-2xl md:text-xl font-semibold px-5 py-2 rounded-md mt-1 flex items-center justify-center gap-3">
+                        Adicionar ao carrinho
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <!--FIM SEÇÃO PRINCIPAL-->
+
+    <!--INÍCIO FOOTER-->
+    <footer class="w-full h-full bg-cinza-escuro flex justify-center md:items-center py-12 px-8">
+        <div class="flex flex-col md:flex-row gap-16">
+            <div class="flex flex-col items-center text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Meios de pagamento</h2>
+                <div class="flex gap-6 justify-center md:gap-2 flex-wrap">
+                    <img class="w-12" src="assets/visa.png" alt="Cartão Visa">
+                    <img class="w-12" src="assets/mastercard.png" alt="Cartão Mastercard">
+                    <img class="w-12" src="assets/elo.png" alt="Cartão Elo">
+                    <img class="w-12" src="assets/hipercard.png" alt="Cartão Hipercard">
+                    <img class="w-12" src="assets/pix.png" alt="Pix">
+                    <img class="w-12" src="assets/boleto.png" alt="Boleto">
+                </div>
+                <div class="flex flex-col gap-4 mt-2">
+                    <h2 class="font-bold text-2xl text-white">Meios de Envio</h2>
+                    <div class="flex gap-6 justify-center md:gap-2 flex-wrap">
+                        <img class="w-12" src="assets/sedex.png" alt="Sedex">
+                        <img class="w-12" src="assets/nuvem.png" alt="Nuvem envio">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base" href="#">(11) 95373-6849</a>
+                </div>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base" href="#">pequenograo@gmail.com</a>
+                </div>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base" href="#">@pequeno_grao</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-black w-full h-full flex justify-center items-center py-3">
+        <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados </span>
+    </footer>
+    <!--FIM FOOTER-->
+
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

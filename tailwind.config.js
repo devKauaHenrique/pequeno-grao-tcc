@@ -9,7 +9,9 @@ module.exports = {
         'rosa-terciario': "#E88DAE",
         'azul-principal': "#2971D3",
         'azul-secundario': "#003191",
-        "custom-transparent": "rgba(0, 0, 0, 0.4)"
+        "custom-transparent": "rgba(0, 0, 0, 0.4)",
+        "cinza": "#D9D9D9",
+        "cinza-escuro": "#3F3F3F",
       },
       backgroundImage: {
         'home': "url(/assets/home.jpg)"
