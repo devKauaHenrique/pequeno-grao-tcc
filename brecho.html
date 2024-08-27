@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="styles/header-brecho.css">
     <link rel="stylesheet" href="styles/brecho.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
 
     <title>Brecho - Pequeno Grão</title>
@@ -111,7 +113,22 @@
         <!--FIM SUBITENS-->
 
         <!--INÍCIO SLIDER-->
-        <img class="w-full h-40" src="assets/slider-home.JPG" alt="Slider">
+        <div class="swiper mySwiper w-full">
+            <div class="swiper-wrapper w-full">
+                <div class="swiper-slide w-full">
+                    <img class="w-full" src="./assets/banner-1.png" alt="Banner 1">
+                </div>
+                <div class="swiper-slide w-full">
+                    <img class="w-full" src="./assets/banner-2.png" alt="Banner 2">
+                </div>
+                <div class="swiper-slide w-full">
+                    <img class="w-full" src="./assets/banner-3.png" alt="Banner 3">
+                </div>
+                <div class="swiper-slide w-full">
+                    <img class="w-full" src="./assets/banner-4.png" alt="Banner 4">
+                </div>
+            </div>
+        </div>
         <!--FIM SLIDER-->
 
         <!--INÍCIO SUBITENS(2)-->
@@ -697,11 +714,10 @@
     <footer class="bg-black w-full h-full flex justify-center items-center py-3">
         <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados </span>
     </footer>
-    <footer class="bg-black w-full h-full flex justify-center items-center py-3">
-        <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados </span>
-    </footer>
     <!--FIM FOOTER-->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/slider.js"></script>
     <script src="scripts/menu.js"></script>
 </body>
 
