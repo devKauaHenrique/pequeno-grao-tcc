@@ -31,7 +31,7 @@ a#link::before {
     bottom: -1px;
     width: 16%;
     height: 2px;
-    background-color: black;
+    background-color: #D4AA78;
     border-radius: 4px;
     scale: 0 1;
     transform-origin: left;

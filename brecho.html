@@ -33,7 +33,7 @@
     <section class="w-full h-full">
 
         <!--INÍCIO HEADER-->
-        <nav class="bg-black">
+        <nav class="bg-salmao sticky top-0 z-10">
 
             <!--INÍCIO HEADER DESKTOP-->
             <div class="w-full px-6 md:pl-12">
@@ -45,8 +45,9 @@
                     </div>
                     <div>
                         <button
-                            class="md:hidden bg-white font-semibold text-lg px-4 py-1 rounded-md flex items-center gap-3">
-                            Meu carrinho (0)
+                            id="cart-btn"
+                            class="md:hidden bg-white font-semibold text-lg px-4 py-1 rounded-md flex items-center gap-1">
+                            Meu carrinho<span id="cart-count">(0)</span>
                         </button>
                     </div>
                     <div class="hidden md:flex items-center space-x-4 text-white text-xl font-medium">
@@ -62,13 +63,14 @@
                             </li>
                         </ul>
                         <button
-                            class="bg-white text-black font-semibold text-lg px-4 py-1 rounded-md flex items-center gap-3">
-                            Meu carrinho (0)
+                            id="cart-btn-2"
+                            class="bg-white text-black font-semibold text-lg px-4 py-1 rounded-md flex items-center gap-1">
+                            Meu carrinho<span id="cart-count-2">(0)</span>
                         </button>
                     </div>
 
                     <!--INÍCIO BOTÃO MENU-->
-                    <div class="-mr-2 flex md:hidden text-white">
+                    <div class="-mr-2 flex md:hidden text-black">
                         <button id="btn-menu" type="button"
                             class="inline-flex items-center justify-center px-4 py-2 rounded-md hover:bg-white hover:text-black focus:outline-none transition duration-300 ease-in-out"
                             aria-label="Menu" aria-expanded="false">
@@ -87,34 +89,16 @@
                 <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
                 <a href="#" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
                 <a href="#"
-                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-black hover:bg-black transition duration-700 ease-in-out">Login</a>
+                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-salmao hover:bg-salmao transition duration-700 ease-in-out">Login</a>
             </div>
             <!--FIM HEADER MOBILE-->
 
         </nav>
         <!--FIM HEADER-->
 
-        <!--INÍCIO SUBITENS-->
-        <section class="bg-cinza w-full h-20 md:h-10 flex">
-            <div
-                class="text-black font-semibold text-lg flex flex-col md:flex-row justify-center items-center gap-2 w-full">
-                <div class="flex justify-around w-full">
-                    <a href="#">All-Items</a>
-                    <a href="#">Roupinhas</a>
-                    <a href="#">Móveis</a>
-                </div>
-                <div class="flex justify-around w-full">
-                    <a href="#">Decoração</a>
-                    <a href="#">Brinquedos</a>
-                    <a href="#">Enxoval</a>
-                </div>
-            </div>
-        </section>
-        <!--FIM SUBITENS-->
-
         <!--INÍCIO SLIDER-->
-        <div class="swiper mySwiper w-full">
-            <div class="swiper-wrapper w-full">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
                 <div class="swiper-slide w-full">
                     <img class="w-full" src="./assets/banner-1.png" alt="Banner 1">
                 </div>
@@ -132,37 +116,37 @@
         <!--FIM SLIDER-->
 
         <!--INÍCIO SUBITENS(2)-->
-        <section class="bg-cinza w-full flex px-2 py-3">
-            <div class="text-black font-semibold text-lg flex flex-col md:flex-row justify-center gap-4 w-full">
+        <section class="bg-salmao w-full flex px-2 py-6">
+            <div class="text-black font-semibold text-lg flex flex-col md:flex-row justify-center gap-6 w-full">
                 <div class="flex justify-around w-full gap-3">
-                    <a class="flex items-center gap-2" href="#">
-                        <i class="fa-solid fa-truck text-3xl"></i>
+                    <a class="flex items-center gap-2 lg:gap-4" href="#">
+                        <i class="fa-solid fa-truck text-3xl lg:text-5xl"></i>
                         <div class="flex flex-col">
-                            <span class="text-xl font-bold">Frete grátis</span>
-                            <span class="text-sm">Confira as regas!</span>
+                            <span class="text-xl lg:text-3xl font-bold">Frete grátis</span>
+                            <span class="text-sm lg:text-lg">Confira as regas!</span>
                         </div>
                     </a>
-                    <a class="flex items-center gap-2" href="#">
-                        <i class="fa-regular fa-credit-card text-3xl"></i>
+                    <a class="flex items-center gap-2 lg:gap-4" href="#">
+                        <i class="fa-solid fa-dollar-sign text-3xl lg:text-5xl"></i>
                         <div class="flex flex-col">
-                            <span class="text-xl font-bold">Parcelamento</span>
-                            <span class="text-sm">Em até 10x!</span>
+                            <span class="text-xl lg:text-3xl font-bold">5% Desconto</span>
+                            <span class="text-sm lg:text-lg">Em compras á vista!</span>
                         </div>
                     </a>
                 </div>
-                <div class="flex justify-around w-full gap-3">
-                    <a class="flex items-center gap-2" href="#">
-                        <i class="fa-solid fa-dollar-sign text-3xl"></i>
+                <div class="flex justify-around w-full gap-1 lg:gap-3">
+                    <a class="flex items-center gap-2 lg:gap-4" href="#">
+                        <i class="fa-regular fa-credit-card text-3xl lg:text-5xl"></i>
                         <div class="flex flex-col">
-                            <span class="text-xl font-bold">5% Desconto</span>
-                            <span class="text-sm">Em compras á vista!</span>
+                            <span class="text-xl lg:text-3xl font-bold">Parcelamos</span>
+                            <span class="text-sm lg:text-lg">Em até 10x!</span>
                         </div>
                     </a>
-                    <a class="flex items-center gap-2" href="#">
-                        <i class="fa-solid fa-ban text-3xl"></i>
+                    <a class="flex items-center gap-2 lg:gap-4" href="#">
+                        <i class="fa-solid fa-ban text-3xl lg:text-5xl"></i>
                         <div class="flex flex-col">
-                            <span class="text-xl font-bold">Sem trocas</span>
-                            <span class="text-sm">Apenas doações!</span>
+                            <span class="text-xl lg:text-3xl font-bold">Sem trocas</span>
+                            <span class="text-sm lg:text-lg">Apenas doações!</span>
                         </div>
                     </a>
                 </div>
@@ -170,511 +154,546 @@
         </section>
         <!--FIM SUBITENS(2)-->
 
-        <!--INÍCIO DESTAQUES-->
-        <section class="h-full w-full flex flex-col items-center py-8 px-4">
-            <h1 class="font-bold text-2xl">Destaques do Pequeno Grão</h1>
+        <div id="carrinho">
 
-            <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
-                <!-- CARD 1-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+            <!--INÍCIO DESTAQUES-->
+            <section class="h-full w-full flex flex-col items-center py-8 px-4">
+                <h1 class="font-bold text-2xl">Destaques do Pequeno Grão</h1>
+
+                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
+                    <!-- CARD 1-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
                         </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2 add-to-cart-btn"
+                                data-name="Cadeira para bebê"
+                                data-price="250.00">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>       
+                        </div>
+                    </div>
+
+                    <!-- CARD 2-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2 add-to-cart-btn"
+                                data-name="Cadeira para bebê"
+                                data-price="250.00">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos ">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--FIM DESTAQUES-->
+
+            <!--INÍCIO MENINAS-->
+            <section class="h-full w-full flex flex-col items-center py-8 px-4">
+                <h1 class="font-bold text-2xl">Meninas</h1>
+
+                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
+                    <!-- CARD 1-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="#">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <a class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2"
+                                href="#">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--FIM MENINAS-->
+
+            <!--INÍCIO MENINOS-->
+            <section class="h-full w-full flex flex-col items-center py-8 px-4">
+                <h1 class="font-bold text-2xl">Meninos</h1>
+
+                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
+                    <!-- CARD 1-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--FIM MENINOS-->
+
+            <!--INÍCIO OUTROS-->
+            <section class="h-full w-full flex flex-col items-center py-8 px-4">
+                <h1 class="font-bold text-2xl">Outros</h1>
+
+                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
+                    <!-- CARD 1-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4-->
+                    <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
+                        <div>
+                            <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
+                        </div>
+                        <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
+                            <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
+                            <div class="flex gap-2">
+                                <span class="font-semibold">Cores:</span>
+                                Preto e Rosa
+                                <div class="bg-black rounded-full w-6 h-6"></div>
+                                <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
+                            </div>
+                            <span class="text-gray-600 line-through">R$250,00</span>
+                            <span class="font-bold text-2xl">R$150,00</span>
+                            <span class="text-base">10x de R$15,00</span>
+                            <span class="font-bold">R$142,50 à vista!</span>
+                            <a class="underline mt-1" href="produto.html">
+                                Ver produto
+                                <i class="fa-regular fa-eye underline"></i>
+                            </a>
+                            <button
+                                class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
+                                Adicionar ao carrinho
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-
-                <!-- CARD 2-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 3-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos ">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 4-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!--FIM DESTAQUES-->
-
-        <!--INÍCIO MENINAS-->
-        <section class="h-full w-full flex flex-col items-center py-8 px-4">
-            <h1 class="font-bold text-2xl">Meninas</h1>
-
-            <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
-                <!-- CARD 1-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 2-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 3-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="#">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <a class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2"
-                            href="#">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- CARD 4-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!--FIM MENINAS-->
-
-        <!--INÍCIO MENINOS-->
-        <section class="h-full w-full flex flex-col items-center py-8 px-4">
-            <h1 class="font-bold text-2xl">Meninos</h1>
-
-            <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
-                <!-- CARD 1-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 2-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 3-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 4-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!--FIM MENINOS-->
-
-        <!--INÍCIO OUTROS-->
-        <section class="h-full w-full flex flex-col items-center py-8 px-4">
-            <h1 class="font-bold text-2xl">Outros</h1>
-
-            <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
-                <!-- CARD 1-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 2-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 3-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 4-->
-                <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
-                    <div>
-                        <img class="rounded-t-md" src="assets/bebeconforto.jpg" alt="Produto">
-                    </div>
-                    <div class="mt-3 flex flex-col gap-1 px-4 mb-4">
-                        <h2 class="text-black font-bold text-2xl mb-1">Cadeira para bebê</h2>
-                        <div class="flex gap-2">
-                            <span class="font-semibold">Cores:</span>
-                            Preto e Rosa
-                            <div class="bg-black rounded-full w-6 h-6"></div>
-                            <div class="bg-rosa-secundario rounded-full w-6 h-6"></div>
-                        </div>
-                        <span class="text-gray-600 line-through">R$250,00</span>
-                        <span class="font-bold text-2xl">R$150,00</span>
-                        <span class="text-base">10x de R$15,00</span>
-                        <span class="font-bold">R$142,50 à vista!</span>
-                        <a class="underline mt-1" href="produto.html">
-                            Ver produto
-                            <i class="fa-regular fa-eye underline"></i>
-                        </a>
-                        <button
-                            class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2">
-                            Adicionar ao carrinho
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!--FIM OUTROS-->
+            </section>
+            <!--FIM OUTROS-->
 
     </section>
     <!--FIM SEÇÃO PRINCIPAL-->
 
+    </div>  
+
+    <!--MODAL CART-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] lg:min-w-[1000px] md:min-w-[900px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de Entrega:</p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="address"
+                class="w-full border-2 p-1 rounded my-1">
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button class="bg-red-500 hover:bg-red-800 text-white font-medium rounded px-4 py-1"
+                    id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn"
+                    class="bg-green-500 hover:bg-green-600 font-medium text-white px-4 py-1 rounded">Finalizar
+                    Pedido</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!--FIM MODAL CART-->
+
     <!--INÍCIO FOOTER-->
-    <footer class="w-full h-full bg-cinza-escuro flex justify-center md:items-center py-12 px-8">
+    <footer class="w-full h-full bg-salmao flex justify-center md:items-center py-12 px-8">
         <div class="flex flex-col md:flex-row gap-16">
             <div class="flex flex-col items-center text-center gap-4">
                 <h2 class="font-bold text-2xl text-white">Meios de pagamento</h2>
@@ -696,29 +715,30 @@
             </div>
             <div class="flex flex-col items-center text-center gap-4">
                 <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
-                <div class="flex items-center gap-3 md:gap-2">
+                <div class="flex items-center font-semibold gap-3 md:gap-2">
                     <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
                     <a class="text-white text-xl md:text-base" href="#">(11) 95373-6849</a>
                 </div>
-                <div class="flex items-center gap-3 md:gap-2">
+                <div class="flex items-center gap-3 font-semibold md:gap-2">
                     <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
                     <a class="text-white text-xl md:text-base" href="#">pequenograo@gmail.com</a>
                 </div>
-                <div class="flex items-center gap-3 md:gap-2">
+                <div class="flex items-center gap-3 font-semibold md:gap-2">
                     <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
                     <a class="text-white text-xl md:text-base" href="#">@pequeno_grao</a>
                 </div>
             </div>
         </div>
     </footer>
-    <footer class="bg-black w-full h-full flex justify-center items-center py-3">
-        <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados </span>
+    <footer class="bg-salmao-escuro w-full h-full flex justify-center items-center py-3">
+        <span class="text-white text-xl font-semibold md:text-base">&copy; Todos os direitos reservados </span>
     </footer>
     <!--FIM FOOTER-->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/carrinho.js"></script>
 </body>
 
 </html>
