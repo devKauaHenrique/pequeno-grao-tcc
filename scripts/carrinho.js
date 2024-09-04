@@ -55,6 +55,18 @@ function addToCart(name, price) {
     //Se já existe um item igual no carrinho
     if (existingItem) {
         existingItem.quantity += 1;
+
+        Toastify({
+            text: "Esse item já existe no carrinho",
+            duration: 5000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#f8b31e",
+            },
+        }).showToast();
     }
     else {
         cart.push({
@@ -62,9 +74,24 @@ function addToCart(name, price) {
             price,
             quantity: 1,
         })
+
+        updateCartModal();
+
+        Toastify({
+            text: "Adicionado no carrinho",
+            duration: 5000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#15c301",
+            },
+        }).showToast();
     }
 
-    updateCartModal();
+    return;
+
 }
 
 //Atualiza o carrinho
@@ -84,7 +111,7 @@ function updateCartModal() {
                 <p class="font-medium mt-2">R$ ${item.price.toFixed(2)}</p>
             </div>
 
-            <button class="remove-from-cart-btn bg-red-500 hover:bg-red-800 text-white font-medium rounded px-4 py-1" data-name="${item.name}">
+            <button class="remove-from-cart-btn bg-vermelho hover:bg-vermelho-escuro text-white font-medium rounded px-4 py-1 transition duration-700 ease-in-out" data-name="${item.name}">
                 Remover
             </button>
 
@@ -106,21 +133,33 @@ function updateCartModal() {
 }
 
 //Para remover o item do carrinho
-cartItemsContainer.addEventListener("click", function(event){
-    if(event.target.classList.contains("remove-from-cart-btn")){
+cartItemsContainer.addEventListener("click", function (event) {
+    if (event.target.classList.contains("remove-from-cart-btn")) {
         const name = event.target.getAttribute("data-name");
 
         removeItemCart(name);
+
+        Toastify({
+            text: "Item removido",
+            duration: 5000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#ef4444",
+            },
+        }).showToast();
     }
 })
 
-function removeItemCart(name){
+function removeItemCart(name) {
     const index = cart.findIndex(item => item.name === name);
 
-    if(index !== -1){
+    if (index !== -1) {
         const item = cart[index];
 
-        if(item.quantity > 1){
+        if (item.quantity > 1) {
             item.quantity -= 1;
             updateCartModal();
             return;
@@ -132,33 +171,30 @@ function removeItemCart(name){
 }
 
 //Pegar o Endereço
-addressInput.addEventListener("input", function(event){
+addressInput.addEventListener("input", function (event) {
     let inputValue = event.target.value;
 
-    if(inputValue !== ""){
+    if (inputValue !== "") {
         addressInput.classList.remove("border-red-500")
         addressWarn.classList.add("hidden")
     }
 })
 
 //Finalizar o pedido
-checkoutBtn.addEventListener("click", function(){
-    if(cart.length === 0) return;
-    if(addressInput.value === ""){
+checkoutBtn.addEventListener("click", function () {
+    if (cart.length === 0) return;
+    if (addressInput.value === "") {
         addressWarn.classList.remove("hidden");
         addressInput.classList.add("border-red-500");
         return;
     }
 
     //Enviar pedido para o whatsapp
-const cartItems = cart.map((item) => {
-    return (
-        `(${item.quantity}) ${item.name} - Preço: R$${item.price} </br>
-        Endereço: ${addressInput.value}
-        -----------------------------
-        `
-    )
-}).join("")
+    const cartItems = cart.map((item) => {
+        return (
+            `(${item.quantity}) ${item.name} - Preço: R$${item.price} - Endereço: ${addressInput.value}`
+        )
+    }).join("||")
 
     const message = encodeURIComponent(cartItems)
     const phone = "5511953736849"

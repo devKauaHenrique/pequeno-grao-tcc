@@ -1,8 +1,8 @@
-li{
+li {
     position: relative;
 }
 
-li::before{
+li::before {
     content: '';
     position: absolute;
     left: 0;
@@ -16,15 +16,15 @@ li::before{
     transition: scale 0.35s;
 }
 
-li:hover::before{
+li:hover::before {
     scale: 1;
 }
 
-a#link{
+a#link {
     position: relative;
 }
 
-a#link::before{
+a#link::before {
     content: '';
     position: absolute;
     left: 50;
@@ -38,6 +38,6 @@ a#link::before{
     transition: scale 0.35s;
 }
 
-a#link:hover::before{
+a#link:hover::before {
     scale: 1;
 }

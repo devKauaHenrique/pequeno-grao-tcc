@@ -12,6 +12,10 @@ module.exports = {
         "custom-transparent": "rgba(0, 0, 0, 0.4)",
         "salmao": "#D4AA78",
         "salmao-escuro": "#ad7d44",
+        "vermelho": "#c82633",
+        "vermelho-escuro": "#9d0d16",
+        "verde": "#11bf00",
+        "verde-escuro": "#31743f"
       },
       backgroundImage: {
         'home': "url(/assets/home.jpg)"

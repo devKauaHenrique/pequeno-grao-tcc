@@ -44,7 +44,7 @@
                     <div>
                         <button
                             class="md:hidden bg-white font-semibold text-lg px-4 py-1 rounded-md flex items-center gap-3">
-                            Meu carrinho (0)
+                            Meu carrinho<span id="cart-count">(0)</span>
                         </button>
                     </div>
                     <div class="hidden md:flex items-center space-x-4 text-white text-xl font-medium">
@@ -61,7 +61,7 @@
                         </ul>
                         <button
                             class="bg-white text-black font-semibold text-lg px-4 py-1 rounded-md flex items-center gap-3">
-                            Meu carrinho (0)
+                            Meu carrinho<span id="cart-count-2">(0)</span>
                         </button>
                     </div>
 
@@ -104,36 +104,11 @@
                     <i class="fa-regular fa-credit-card text-3xl"></i>
                     <span class="text-lg font-medium">10x de R$15,00</span>
                 </span>
-                <div class="md:flex md:gap-4 w-52">
-                    <form class="mt-2">
-                        <input class="border-2 border-black rounded-md px-3 py-2 text-2xl font-semibold w-72"
-                            list="cores" name="cor" placeholder="Cores">
-                        <datalist clas id="cores">
-                            <option value="Rosa"></option>
-                            <option value="Azul"></option>
-                            <option value="Amarelo"></option>
-                        </datalist>
-                    </form>
-                    <form class="mt-2">
-                        <input class="border-2 border-black rounded-md px-3 py-2 text-2xl font-semibold w-72"
-                            list="tamanho" name="tamanho" placeholder="Tamanhos">
-                        <datalist clas id="tamanho">
-                            <option value="Pequeno"></option>
-                            <option value="Médio"></option>
-                            <option value="Grande"></option>
-                        </datalist>
-                    </form>
-                </div>
-                <div class="md:flex gap-4 md:mt-2">
-                    <div
-                        class=" bg-white text-center font-bold text-2xl text-black border-2 border-black rounded-md flex items-center justify-around py-1 w-72">
-                        <button class="text-3xl" id="diminuir">-</button>
-                        <span>1</span>
-                        <button class="text-2xl" id="adicionar">+</button>
-                    </div>
+                <div class="md:flex md:gap-4 w-full">
                     <button
-                        class="bg-black text-white text-2xl md:text-xl font-semibold px-5 py-2 rounded-md mt-2 flex items-center justify-center gap-3 w-72">
-                        Adicionar ao
+                        class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2 add-to-cart-btn"
+                        data-name="Cadeira para bebê" data-price="250.00">
+                        Adicionar ao carrinho
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                 </div>
@@ -186,7 +161,9 @@
     </footer>
     <!--FIM FOOTER-->
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/carrinho.js"></script>
 </body>
 
 </html>
