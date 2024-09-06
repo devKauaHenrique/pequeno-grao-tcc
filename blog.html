@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--TAGS PADRÕES-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--META TAG OG-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pequeno Grão - Para papais e mamães de 1º viagem!" />
+    <meta property="og:image" content="https://pequeno-grao-tcc.vercel.app/assets/logo.ico" />
+    <meta property="og:description" content="O melhor site auxiliador para papais e mamães" />
+    <meta property="og:site_name" content="Pequeno Grão" />
+
+    <!--TAGS FONTE IMPORTADA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!--TAGS ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--TAG CSS-->
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="styles/header-pai.css">
+    <link rel="stylesheet" href="styles/blog.css">
+
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Pequeno Grão</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #0044cc; /* Ajuste conforme necessário */
+            color: white;
+            text-align: center;
+            padding: 12px 8px;
+        }
+
+        .footer-bottom {
+            background-color: #003366; /* Ajuste conforme necessário */
+            color: white;
+            text-align: center;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-poppins overflow-x-hidden">
+
+    <!--INÍCIO SEÇÃO PRINCIPAL-->
+    <div class="main-content">
+
+        <!--INÍCIO HEADER-->
+        <nav class="bg-custom-transparent">
+
+            <!--INÍCIO HEADER DESKTOP-->
+            <div class="w-full px-6 md:pl-12">
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex items-center">
+                        <a href="#" class="flex-shrink-0">
+                            <img class="w-32" src="/assets/Logo_Pequeno_Grão.png" alt="Logo Pequeno Grão">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4 text-white text-xl font-medium">
+                        <ul class="flex gap-6 items-center">
+                            <li>
+                                <a href="index.html" class="">Início</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="brecho.html" class="">Brechó</a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="px-6 py-1 rounded-lg border border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out">Login</a>
+                    </div>
+
+                    <!--INÍCIO BOTÃO MENU-->
+                    <div class="-mr-2 flex md:hidden">
+                        <button id="btn-menu" type="button"
+                            class="inline-flex items-center justify-center px-4 py-2 rounded-md hover:bg-azul-principal focus:outline-none transition duration-300 ease-in-out"
+                            aria-label="Menu" aria-expanded="false">
+                            <i class="fa-solid fa-bars text-xl text-white"></i>
+                        </button>
+                    </div>
+                    <!--FIM BOTÃO MENU-->
+                </div>
+            </div>
+            <!--FIM HEADER DESKTOP-->
+
+            <!--INÍCIO HEADER MOBILE-->
+            <div id="menu"
+                class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
+                <a href="index.html" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
+                <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
+                <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
+                <a href="#"
+                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out">Login</a>
+            </div>
+            <!--FIM HEADER MOBILE-->
+
+        </nav>
+        <!--FIM HEADER-->
+
+        <!-- Post Principal -->
+        <section class="featured">
+            <div class="featured-container">
+                <div class="post-thumb">
+                    <img src="assets/NomesDeBb.jpg" alt="">
+                </div>
+
+                <!--categorias do post-->
+                <div class="post-info">
+                    <div class="category-btn"> Discovery </div>
+
+                    <!-- Img/Escrita Post -->
+                    <h2 class="post-title">
+                        <a href="assets/Banner.png">
+                            Lrem ispsum dolor sit amet, consectetur </a>
+                    </h2>
+                    <p class="post-body"> Lorem ipsum dolor sit amet, consect adipising hgjjkb n vgfhgfiknbnvidn
+                        nvkfnknknbklfb</p>
+
+                    <!-- Data do Post -->
+                    <div class="post-profile">
+                        <div class="post-profile-img">
+                            <img src="assets/Banner.png" alt="">
+                        </div>
+                        <div class="post-profile-info">
+                            <h5> Anny Ria </h5>
+                            <small> June 14, 2023 - 10:45</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Post -->
+        <section class="post">
+            <div class="post-container container">
+                <article class="post">
+                    <div class="post-thumb">
+                        <img src="assets/NomesDeBb.jpg" width="260px" height="260px">
+                    </div>
+
+                    <!-- 1 POST-->
+                    <div class="post-info">
+                        <h2 class="post-title"> <a
+                                href="https://www.dentrodahistoria.com.br/blog/dicas/30-nomes-femininos-mais-populares-para-bebes-em-2024/">
+                                30 nomes femininos mais populares para bebês em 2024</a></h2>
+                        <p class="post-body">
+                            Em meio à felicidade que envolve a chegada de um novo membro à família
+                            , há uma tarefa particularmente especial que nos enche de alegria:
+                            escolher o nome perfeito para a pequena menina que está por vir.
+                        </p>
+                        <!--categorias e link do post-->
+                        <div class="category-btn"> <a href=""> Dicas </a> </div>
+
+                        <!-- Img/Autor Post -->
+                        <div class="post-profile">
+                            <div class="post-profile-img">
+                                <img src="assets/perfil.jpg" alt="">
+                            </div>
+
+                            <!-- Data do Post -->
+                            <div class="post-profile-info">
+                                <h5>Dentro da História</h5>
+                                <small>3 de Abril, 2024 </small>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!--Post 2 -->
+            <div class="post-container container">
+                <article class="post">
+                    <div class="post-thumb">
+                        <img src="assets/autoestima.jpg" width="260px" height="260px">
+                    </div>
+
+                    <!-- post-->
+                    <div class="post-info">
+                        <h2 class="post-title"> <a
+                                href="https://zenklub.com.br/blog/palavra-de-especialista/o-impacto-das-relacoes-familiares-na-autoestima/">
+                                O impacto das relações familiares na autoestima</a></h2>
+                        <p class="post-body">
+                            A autoestima é definida, de acordo com a psicologia, como a avaliação que uma pessoa faz de si
+                            mesma.
+                        </p>
+                        <!--categorias e link do post-->
+                        <div class="category-btn"> <a href=""> Psicologia </a> </div>
+
+                        <!-- Img/Autor Post -->
+                        <div class="post-profile">
+                            <div class="post-profile-img">
+                                <img src="assets/perfil.jpg" alt="">
+                            </div>
+
+                            <!-- Data do Post -->
+                            <div class="post-profile-info">
+                                <h5> Zenklub </h5>
+                                <small> 6 de Fevereiro, 2024 </small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!--Post 3-->
+            <div class="post-container container">
+                <article class="post">
+                    <div class="post-thumb">
+                        <img src="assets/amamentacao.jpg" width="260px" height="260px">
+                    </div>
+
+                    <!-- post-->
+                    <div class="post-info">
+                        <h2 class="post-title"> <a
+                                href="https://www.saude.df.gov.br/web/guest/w/principais-cuidados-durante-o-per%C3%ADodo-de-amamenta%C3%A7%C3%A3o">
+                                Principais cuidados durante o período de amamentação do Bebê</a></h2>
+                        <p class="post-body">
+                            Saiba o que é permitido fazer, consumir ou usar e o que deve ser evitado durante o
+                            aleitamento materno.
+                            Agosto Dourado marca mês de conscientização ao aleitamento materno.</p>
+
+                        <!--categorias e link do post-->
+                        <div class="category-btn"> <a href="amamentacao.html"> Amamentação </a> </div>
+
+                        <!-- Img/Autor Post -->
+                        <div class="post-profile">
+                            <div class="post-profile-img">
+                                <img src="assets/amamenPrincipal.png" width="260px" height="260px">
+                                <img src="assets/michelleHorovits.jpeg" alt="">
+                            </div>
+
+                            <div class="post-profile-info">
+                                <h5> Michelle Horovits </h5>
+                                <small>04 de Agosto, 2023</small>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!--Post 4-->
+        <section class="post">
+            <div class="post-container container">
+                <article class="post">
+                    <div class="post-thumb">
+                        <img src="assets/paternidade.jpg" width="260px" height="260px">
+                    </div>
+
+                    <!--categorias do post-->
+                    <div class="post-info">
+                        <h2 class="post-title"> <a
+                                href="https://www.pge.ms.gov.br/paternidade-ativa-um-pai-presente-transforma-o-futuro/">
+                                Paternidade ativa: Um pai presente transforma o futuro </a></h2>
+                        <p class="post-body">
+                            Para muitos, a paternidade é desafiadora e até difícil; já outros avaliam como uma fase
+                            transformadora que traz
+                            muito amadurecimento. Contudo, o que ninguém discorda é que ser PAI – no sentido
+                            amplo da palavra e das responsabilidade.
+                        </p>
+
+                        <!--categorias e link do post-->
+                        <div class="category-btn"> <a href=""> Paternidade </a> </div>
+
+                        <!-- Img/Escrita Post -->
+                        <div class="post-profile">
+                            <div class="post-profile-img">
+                                <img src="assets/pgeMS.png" alt="">
+                            </div>
+
+                            <!-- Data do Post -->
+                            <div class="post-profile-info">
+                                <h5>PGE-MS</h5>
+                                <small>06 de Agosto, 2021</small>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!--Post 5-->
+            <div class="post-container container">
+                <article class="post">
+                    <div class="post-thumb">
+                        <img src="assets/deprePosParto.jpg" width="260px" height="260px">
+                    </div>
+
+                    <!--categorias do post-->
+                    <div class="post-info">
+                        <h2 class="post-title"> <a href="https://julianacavalsan.com.br/">
+                                Será que é depressão Pós-Parto? E agora? O que fazer?</a></h2>
+                        <p class="post-body">
+                            Não é fácil reconhecer sintomas de depressão pós-parto nas mães pois há
+                            uma confusão entre o que é considerado normal para essa fase de vida e o que é realmente uma
+                            doença. Tirando o Fato do preconceito por
+                            ás vezes as mães não terem conexões com seus própris filhos.
+                        </p>
+
+                        <!--categorias e link do post-->
+                        <div class="category-btn"> <a href=""> Bem-Estar </a> </div>
+
+                        <!-- Img/Escrita Post -->
+                        <div class="post-profile">
+                            <div class="post-profile-img">
+                                <img src="assets/draJu.jpg" alt="">
+                            </div>
+
+                            <!-- Data do Post -->
+                            <div class="post-profile-info">
+                                <h5> Dra. Juliana Cavalsan </h5>
+                                <small>27 de Dezembro, 2022</small>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+
+            <!--Post 5-->
+            <div class="post-container container">
+                <article class="post">
+                    <div class="post-thumb">
+                        <img src="assets/piramideAlimentar.jpg" width="260px" height="260px">
+                    </div>
+
+                    <!--categorias do post-->
+                    <div class="post-info">
+                        <h2 class="post-title"> <a
+                                href="https://www.hospitalinfantilsabara.org.br/alimentacao-infantil/">
+                                Alimentação infantil: Pirâmide alimentar correta e adequada</a> </h2>
+                        <p class="post-body">
+                            A pirâmide alimentar serve para mostrar, visualmente, quais tipos de alimentos devemos
+                            ingerir em maior ou menor quantidade.
+                            Na base, estão os alimentos que devem ser mais consumidos: os carboidratos. Depois, vêm os
+                            vegetais e frutas
+                        </p>
+
+                        <!--categorias e link do post-->
+                        <div class="category-btn"> <a href=""> Alimentação</a> </div>
+
+                        <!-- Img/Escrita Post -->
+                        <div class="post-profile">
+                            <div class="post-profile-img">
+                                <img src="assets/hospitalSabara.jpeg" alt="">
+                            </div>
+
+                            <!-- Data do Post -->
+                            <div class="post-profile-info">
+                                <h5> Hospital Sabará</h5>
+                                <small>28 de Março, 2024</small>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </div>
+    <!--FIM SEÇÃO PRINCIPAL-->
+
+    <!--INÍCIO FOOTER-->
+    <footer class="w-full bg-azul-principal flex justify-center md:items-center py-12 px-8">
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="flex flex-col text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Departamentos</h2>
+                <a class="text-white text-xl md:text-base" href="#">Blog</a>
+                <a class="text-white text-xl md:text-base" href="#">Brechó</a>
+                <a class="text-white text-xl md:text-base" href="#">Grupo do Whatsapp</a>
+            </div>
+            <div class="flex flex-col text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>
+                <a class="text-white text-xl md:text-base" href="#">Ideias de nome para o seu bebê!</a>
+                <a class="text-white text-xl md:text-base" href="#">Dicas de alimentação na gravidez!</a>
+            </div>
+            <div class="flex flex-col items-center text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base" href="#">(11) 95373-6849</a>
+                </div>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base" href="#">pequenograo@gmail.com</a>
+                </div>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base" href="#">@pequeno_grao</a>
+                </div>
+            </div>
+            <div class="flex flex-col text-center items-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
+                <div class="flex flex-row gap-4">
+                    <a href="#">
+                        <i
+                            class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                    <a href="#">
+                        <i
+                            class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                    <a href="#">
+                        <i
+                            class="fa-brands fa-facebook text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-azul-secundario w-full flex justify-center items-center py-3">
+        <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados</span>
+    </footer>
+    <!--FIM FOOTER-->
+
+    <script src="script.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

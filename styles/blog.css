@@ -1,0 +1,140 @@
+:root{
+    
+    --border-radius-1: .3rem;
+    --border-radius-2: .5rem;
+    --border-radius-3: .8rem;
+    --border-radius-4: 2rem;
+    --border-radius-5: 6rem;
+
+    --color-light: #fff2fb;
+}
+
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: .5s ease;
+}
+
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5{
+    color: #2b2929;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+h2{
+    font-size: 2.7rem;
+    margin: 1rem 0;
+}
+
+h3{
+    font-size: 1.2rem;
+    margin: .8rem 0 .5rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/*    Categoria button    */
+.category-btn{
+    background: #fa74df;
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: 0.5rem;
+}
+
+.category-btn:hover{
+    color: #e69dd3;
+}
+/*     Final category button    */
+
+
+/*  Borda dos  Post     */
+.post-thumb{
+    border-radius: var(--border-radius-5) 0;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 0.7rem solid var(--color-light);
+    
+}
+
+.post-profile{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+      /*IMG/DATA escritor*/
+.post-profile-img{
+    height: 3.2rem;
+    width: 3.2rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+/*    Final  Post     */
+
+
+small{
+    color:#000000;
+}
+
+.Featured{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.post{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.post-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article.post{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+.post-title a{
+    color: #132bfd;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.category-btn a{
+    color: white;
+}
+
+
