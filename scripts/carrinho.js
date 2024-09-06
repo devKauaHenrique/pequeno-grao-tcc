@@ -104,7 +104,7 @@ function updateCartModal() {
         cartItemElement.classList.add("flex", "justify-between", "mb-4", "flex-col")
 
         cartItemElement.innerHTML = `
-        <div class="flex items-center justify-between"> 
+        <div class="flex items-center justify-between border-b-2 border-black"> 
             <div> 
                 <p class="font-bold text-xl">${item.name}</p>
                 <p>Quantidade: ${item.quantity}</p>

@@ -7,7 +7,7 @@ html{
 }
 
 .fundo-projetos{
-    transition: transform 0.25s;
+    transition: transform 0.8s;
 }
 
 .fundo-projetos:hover{

@@ -1,3 +1,7 @@
+.fundo-projetos img{
+    transition: transform 0.8s;
+}
+
 .fundo-produtos img:hover {
     transform: scale(1.1);
 }

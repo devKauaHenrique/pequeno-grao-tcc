@@ -122,6 +122,7 @@
                 <div class="swiper-slide w-full">
                     <img class="w-full" src="./assets/banner-8.png" alt="Banner 8">
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
         <!--FIM SLIDER-->
@@ -171,7 +172,7 @@
             <section class="h-full w-full flex flex-col items-center py-8 px-4">
                 <h1 class="font-bold text-2xl">Destaques do Pequeno Grão</h1>
 
-                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
+                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 md:gap-4 lg:gap-12">
                     <!-- CARD 1-->
                     <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
                         <div class="max-w-72">
@@ -284,7 +285,7 @@
             <section class="h-full w-full flex flex-col items-center py-8 px-4">
                 <h1 class="font-bold text-2xl">Meninas</h1>
 
-                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
+                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 md:gap-4 lg:gap-12">
                     <!-- CARD 1-->
                     <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
                         <div class="max-w-52">
@@ -393,7 +394,7 @@
             <section class="h-full w-full flex flex-col items-center py-8 px-4">
                 <h1 class="font-bold text-2xl">Meninos</h1>
 
-                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
+                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 md:gap-4 lg:gap-12">
                     <!-- CARD 1-->
                     <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
                         <div class="max-w-52">
@@ -502,7 +503,7 @@
             <section class="h-full w-full flex flex-col items-center py-8 px-4">
                 <h1 class="font-bold text-2xl">Outros</h1>
 
-                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
+                <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 md:gap-4 lg:gap-12">
                     <!-- CARD 1-->
                     <div class="bg-white max-w-80 flex flex-col items-center mt-4 hover:cursor-pointer fundo-produtos">
                         <div class="max-w-52">
@@ -563,7 +564,7 @@
                             <h2 class="text-black font-bold text-2xl mb-1">Conjunto Boy</h2>
                             <div class="flex gap-2">
                                 <span class="font-semibold">Cores:</span>
-                                Azul, Preto e Branco
+                                Azul e Preto 
                                 <div class="bg-azul-secundario rounded-full w-6 h-6"></div>
                                 <div class="bg-black rounded-full w-6 h-6"></div>
                             </div>
@@ -616,14 +617,14 @@
     </div>
 
     <!--MODAL CART-->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden py-3" id="cart-modal">
 
-        <div class="bg-white p-5 rounded-md min-w-[90%] lg:min-w-[1000px] md:min-w-[900px]">
+        <div class="bg-white p-5 rounded-md min-w-[90%] lg:min-w-[1000px] md:min-w-[900px] h-full overflow-y-auto">
             <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
 
             <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
 
-            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold text-lg">Total: <span id="cart-total">0.00</span></p>
 
             <p class="font-bold mt-4">Endereço de Entrega:</p>
             <input type="text" placeholder="Digite seu endereço completo..." id="address"
@@ -669,7 +670,7 @@
                 <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
                 <div class="flex items-center font-semibold gap-3 md:gap-2">
                     <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
-                    <a class="text-white text-xl md:text-base" href="#">(11) 95373-6849</a>
+                    <a class="text-white text-xl md:text-base" href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11) 95373-6849</a>
                 </div>
                 <div class="flex items-center gap-3 font-semibold md:gap-2">
                     <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
@@ -677,7 +678,7 @@
                 </div>
                 <div class="flex items-center gap-3 font-semibold md:gap-2">
                     <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
-                    <a class="text-white text-xl md:text-base" href="#">@pequeno_grao</a>
+                    <a class="text-white text-xl md:text-base" href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
                 </div>
             </div>
         </div>
