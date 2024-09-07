@@ -19,50 +19,41 @@
     <!--TAG CSS-->
     <link rel="stylesheet" href="styles/output.css">
     <link rel="stylesheet" href="styles/header-brecho.css">
-    <link rel="stylesheet" href="styles/brecho.css">
+    <link rel="stylesheet" href="styles/login.css">
 
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
 
-    <title>Cadeira de Bebê</title>
+    <title>Registrar</title>
 </head>
 
 <body class="font-poppins overflow-x-hidden">
 
     <!--INÍCIO SEÇÃO PRINCIPAL-->
-    <section class="w-full h-full">
+    <section class="w-full h-screen">
+
         <!--INÍCIO HEADER-->
         <nav class="bg-salmao">
 
             <!--INÍCIO HEADER DESKTOP-->
             <div class="w-full px-6 md:pl-12">
                 <div class="flex items-center justify-between h-20">
-                    <div class="md:flex md:items-center hidden">
+                    <div class="flex items-center">
                         <a href="#" class="flex-shrink-0">
                             <img class="w-32" src="/assets/Logo_Pequeno_Grão.png" alt="Logo Pequeno Grão">
                         </a>
                     </div>
-                    <div>
-                        <button
-                            class="md:hidden bg-white font-semibold text-lg px-4 py-1 rounded-md flex items-center gap-3">
-                            Meu carrinho<span id="cart-count">(0)</span>
-                        </button>
-                    </div>
-                    <div class="hidden md:flex items-center space-x-4 text-white text-xl font-medium">
+                    <div class="hidden md:flex items-center space-x-4 md:mr-20 text-white text-xl font-medium">
                         <ul class="flex gap-6 items-center">
                             <li>
                                 <a href="index.html" class="">Início</a>
                             </li>
                             <li>
-                                <a href="#" class="">Blog</a>
+                                <a href="blog.html" class="">Blog</a>
                             </li>
                             <li>
                                 <a href="brecho.html" class="">Brechó</a>
                             </li>
                         </ul>
-                        <button
-                            class="bg-white text-black font-semibold text-lg px-4 py-1 rounded-md flex items-center gap-3">
-                            Meu carrinho<span id="cart-count-2">(0)</span>
-                        </button>
                     </div>
 
                     <!--INÍCIO BOTÃO MENU-->
@@ -82,38 +73,50 @@
             <div id="menu"
                 class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
                 <a href="index.html" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
-                <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
+                <a href="blog.html" id="link" class="text-white block px-3 py-1">Blog</a>
                 <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
-                <a href="#"
-                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-black hover:bg-black transition duration-700 ease-in-out">Login</a>
             </div>
             <!--FIM HEADER MOBILE-->
 
         </nav>
         <!--FIM HEADER-->
 
-        <section class="h-full w-full flex flex-col md:flex-row md:justify-center items-center py-8 px-8 md:gap-6 mt-4">
-            <div class="mt-4">
-                <img src="assets/bebeconforto.jpg" alt="Cadeira de Bebê">
-            </div>
-            <div class="mt-4 flex flex-col gap-2">
-                <h1 class="font-bold text-3xl">Cadeira para Bebê</h1>
-                <span class="text-gray-600 line-through text-lg">R$250,00</span>
-                <span class="font-bold text-3xl">R$150,00</span>
-                <span class="flex items-center gap-2">
-                    <i class="fa-regular fa-credit-card text-3xl"></i>
-                    <span class="text-lg font-medium">10x de R$15,00</span>
-                </span>
-                <div class="md:flex md:gap-4 w-full">
-                    <button
-                        class="bg-black text-white text-lg font-semibold mt-1 px-5 py-2 rounded-md flex items-center gap-2 add-to-cart-btn"
-                        data-name="Cadeira para bebê" data-price="250.00">
-                        Adicionar ao carrinho
-                        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="flex justify-center items-center h-screen-minus-header-1 w-full px-6">
+            <form action="" class="bg-salmao rounded-xl px-6 py-6 w-full md:max-w-96 flex flex-col">
+                <div class="flex flex-col gap-1 mb-1">
+                    <label for="" class="font-bold text-lg">Nome:</label>
+                    <input class="w-full rounded-lg" type="text" name="nome" placeholder="Digite seu nome" onchange="onChangeName()" id="name">
+                    <div><span class="error" id="name-required-error">Nome é obrigatório!</span></div>
+                </div>
+                <div class="flex flex-col gap-1 mb-1">
+                    <label class="font-bold text-lg" for="">Email</label>
+                    <input class="w-full rounded-lg" type="email" name="email" placeholder="Digite seu email" onchange="onChangeEmail()" id="email">
+                    <div><span class="error" id="email-required-error">Email é obrigatório!</span></div>
+                    <div><span class="error" id="email-invalid-error">Email inválido!</span></div>
+                </div>
+                <div class="flex flex-col gap-1 mb-1">
+                    <label class="font-bold text-lg" for="">Senha</label>
+                    <input class="w-full rounded-lg" type="password" name="password" placeholder="Digite sua senha" onchange="onChangePassword()" id="password">
+                    <div><span class="error" id="password-required-error">Senha é obrigatório!</span></div>
+                    <div><span class="error" id="password-min-length-error">Senha deve ter pelo menos 6 caracteres!</span></div>
+                </div>
+                <div class="flex flex-col gap-1 mb-2">
+                    <label class="font-bold text-lg" for="">Confirmar senha</label>
+                    <input class="w-full rounded-lg" type="password" name="password" placeholder="Digite sua senha" onchange="onChangeConfirmPassword()" id="confirmPassword">
+                    <div><span class="error" id="password-doesnt-match-error">As senhas não são iguais!</span></div>
+                </div>
+                <div>
+                    <button type="button" disabled="true" onclick="register()" class="font-semibold text-lg text-center w-full bg-transparent border bg-white text-salmao rounded-lg mb-3" id="register-button">
+                        Registrar
                     </button>
                 </div>
-            </div>
-        </section>
+                <div>
+                    <button type="button" id="login-button" class="font-bold text-lg text-center w-full bg-transparent border border-white text-white rounded-lg" onclick="login()">
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
 
     </section>
     <!--FIM SEÇÃO PRINCIPAL-->
@@ -141,17 +144,17 @@
             </div>
             <div class="flex flex-col items-center text-center gap-4">
                 <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
-                <div class="flex items-center gap-3 md:gap-2">
+                <div class="flex items-center font-semibold gap-3 md:gap-2">
                     <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
-                    <a class="text-white text-xl md:text-base" href="#">(11) 95373-6849</a>
+                    <a class="text-white text-xl md:text-base" href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11) 95373-6849</a>
                 </div>
-                <div class="flex items-center gap-3 md:gap-2">
+                <div class="flex items-center gap-3 font-semibold md:gap-2">
                     <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
                     <a class="text-white text-xl md:text-base" href="#">pequenograo@gmail.com</a>
                 </div>
-                <div class="flex items-center gap-3 md:gap-2">
+                <div class="flex items-center gap-3 font-semibold md:gap-2">
                     <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
-                    <a class="text-white text-xl md:text-base" href="#">@pequeno_grao</a>
+                    <a class="text-white text-xl md:text-base" href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
                 </div>
             </div>
         </div>
@@ -161,9 +164,12 @@
     </footer>
     <!--FIM FOOTER-->
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+    <script src="scripts/firebase-init.js"></script>
+    <script src="scripts/registro.js"></script>
+    <script src="scripts/validations.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/carrinho.js"></script>
 </body>
 
 </html>

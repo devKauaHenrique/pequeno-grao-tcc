@@ -1,0 +1,12 @@
+input, button{
+    padding: 10px;
+}
+
+button[disabled]{
+    opacity: 0.6;
+}
+
+.error{
+    color: red;
+    display: none;
+}

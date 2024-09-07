@@ -18,7 +18,8 @@ module.exports = {
         "verde-escuro": "#31743f"
       },
       backgroundImage: {
-        'home': "url(/assets/home.jpg)"
+        'home': "url(/assets/home.jpg)",
+        'login': "url(/assets/login.jpg)",
       },
       height: {
         'screen-minus-header-1': 'calc(100vh - 5rem)',
