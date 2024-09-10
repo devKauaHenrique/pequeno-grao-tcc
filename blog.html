@@ -25,17 +25,21 @@
 
     <!--TAG CSS-->
     <link rel="stylesheet" href="styles/output.css">
-    <link rel="stylesheet" href="styles/header-pai.css">
+    <link rel="stylesheet" href="styles/header-brecho.css">
     <link rel="stylesheet" href="styles/blog.css">
 
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
 
+
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="blog.js"></script>
 
     <title>Pequeno Grão</title>
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
             display: flex;
@@ -47,14 +51,16 @@
         }
 
         footer {
-            background-color: #0044cc; /* Ajuste conforme necessário */
+            background-color: #D4AA78;
+            /* Ajuste conforme necessário */
             color: white;
             text-align: center;
             padding: 12px 8px;
         }
 
         .footer-bottom {
-            background-color: #003366; /* Ajuste conforme necessário */
+            background-color: #18d828;
+            /* Ajuste conforme necessário */
             color: white;
             text-align: center;
             padding: 3px;
@@ -63,21 +69,36 @@
 </head>
 
 <body class="font-poppins overflow-x-hidden">
-
     <!--INÍCIO SEÇÃO PRINCIPAL-->
     <div class="main-content">
 
         <!--INÍCIO HEADER-->
-        <nav class="bg-custom-transparent">
+        <nav class="bg-salmao">
+
 
             <!--INÍCIO HEADER DESKTOP-->
             <div class="w-full px-6 md:pl-12">
                 <div class="flex items-center justify-between h-20">
                     <div class="flex items-center">
                         <a href="#" class="flex-shrink-0">
-                            <img class="w-32" src="/assets/Logo_Pequeno_Grão.png" alt="Logo Pequeno Grão">
+
+                            <!--INÍCIO MENU-->
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Pesquisa</button>
+                                <div id="pesquisa" class="dropdown-content">
+                                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                    <a href="amamentacao.html"> Amamentação </a>
+                                    <a href="dicas.html">Dicas</a>
+                                    <a href="cuidados.html">Cuidados</a>
+                                    <a href="curiosidades.html">Curiosidades</a>
+                                    <a href="alimentacao.html">Alimentação</a>
+                                    <a href="psicologia.html">Psicologia</a>
+                                </div>
+                            </div>
                         </a>
                     </div>
+
+
                     <div class="hidden md:flex items-center space-x-4 text-white text-xl font-medium">
                         <ul class="flex gap-6 items-center">
                             <li>
@@ -91,13 +112,15 @@
                             </li>
                         </ul>
                         <a href="#"
-                            class="px-6 py-1 rounded-lg border border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out">Login</a>
+                            class="px-6 py-1 rounded-lg border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
                     </div>
+
+
 
                     <!--INÍCIO BOTÃO MENU-->
                     <div class="-mr-2 flex md:hidden">
                         <button id="btn-menu" type="button"
-                            class="inline-flex items-center justify-center px-4 py-2 rounded-md hover:bg-azul-principal focus:outline-none transition duration-300 ease-in-out"
+                            class="inline-flex items-center justify-center px-4 py-2 rounded-md hover:bg-salmao-escuro focus:outline-none transition duration-300 ease-in-out"
                             aria-label="Menu" aria-expanded="false">
                             <i class="fa-solid fa-bars text-xl text-white"></i>
                         </button>
@@ -114,7 +137,7 @@
                 <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
                 <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
                 <a href="#"
-                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out">Login</a>
+                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
             </div>
             <!--FIM HEADER MOBILE-->
 
@@ -125,41 +148,47 @@
         <section class="featured">
             <div class="featured-container">
                 <div class="post-thumb">
-                    <img src="assets/NomesDeBb.jpg" alt="">
+                    <img src="imagens/recemNascido.jpg" alt="">
                 </div>
 
                 <!--categorias do post-->
                 <div class="post-info">
-                    <div class="category-btn"> Discovery </div>
-
                     <!-- Img/Escrita Post -->
                     <h2 class="post-title">
-                        <a href="assets/Banner.png">
-                            Lrem ispsum dolor sit amet, consectetur </a>
+                        <a
+                            href="https://www.pampers.com.br/recem-nascido/dicas/artigo/conselhos-essenciais-de-cuidados-com-o-bebe">
+                            Cuidados essenciais com recém-nascidos </a>
                     </h2>
-                    <p class="post-body"> Lorem ipsum dolor sit amet, consect adipising hgjjkb n vgfhgfiknbnvidn
-                        nvkfnknknbklfb</p>
+                    <p class="post-body"> Para cuidar do recém-nascido em casa, os pais
+                    <p> precisam dedicar muito tempo ao bebê, pois ele é muito pequenino </p>
+                    e frágil e precisa de muita atenção.Os pais devem, por isso,
+                    <p> ter alguns cuidados básicos para manter o conforto do recém-nascido </p>
+                    e garantir que cresce forte e saudável</p>
 
-                    <!-- Data do Post -->
+                    <div class="category-btn"> <a href="dicas.html">Dicas</a></div>
+
+
                     <div class="post-profile">
                         <div class="post-profile-img">
-                            <img src="assets/Banner.png" alt="">
+                            <img src="imagens/pampers.jpg" alt="">
                         </div>
+
                         <div class="post-profile-info">
-                            <h5> Anny Ria </h5>
-                            <small> June 14, 2023 - 10:45</small>
+                            <h5> Pampers</h5>
+                            <small> 08 de Março, 2023</small>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+
         <!-- Post -->
         <section class="post">
             <div class="post-container container">
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/NomesDeBb.jpg" width="260px" height="260px">
+                        <img src="assets/NomesDeBb.jpg">
                     </div>
 
                     <!-- 1 POST-->
@@ -173,7 +202,7 @@
                             escolher o nome perfeito para a pequena menina que está por vir.
                         </p>
                         <!--categorias e link do post-->
-                        <div class="category-btn"> <a href=""> Dicas </a> </div>
+                        <div class="category-btn"> <a href="dicas.html"> Dicas </a> </div>
 
                         <!-- Img/Autor Post -->
                         <div class="post-profile">
@@ -196,7 +225,7 @@
             <div class="post-container container">
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/autoestima.jpg" width="260px" height="260px">
+                        <img src="assets/autoestima.jpg">
                     </div>
 
                     <!-- post-->
@@ -205,11 +234,12 @@
                                 href="https://zenklub.com.br/blog/palavra-de-especialista/o-impacto-das-relacoes-familiares-na-autoestima/">
                                 O impacto das relações familiares na autoestima</a></h2>
                         <p class="post-body">
-                            A autoestima é definida, de acordo com a psicologia, como a avaliação que uma pessoa faz de si
-                            mesma.
+                            Desde a infância, a forma como somos tratados pelos nossos pares, acolhidos, elogiados ou
+                            julgados, servem como referência para a construção da
+                            nossa identidade, da forma como nos enxergamos.
                         </p>
                         <!--categorias e link do post-->
-                        <div class="category-btn"> <a href=""> Psicologia </a> </div>
+                        <div class="category-btn"> <a href="psicologia.html"> Psicologia </a> </div>
 
                         <!-- Img/Autor Post -->
                         <div class="post-profile">
@@ -231,7 +261,7 @@
             <div class="post-container container">
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/amamentacao.jpg" width="260px" height="260px">
+                        <img src="assets/amamentacao.jpg">
                     </div>
 
                     <!-- post-->
@@ -250,7 +280,7 @@
                         <!-- Img/Autor Post -->
                         <div class="post-profile">
                             <div class="post-profile-img">
-                                <img src="assets/amamenPrincipal.png" width="260px" height="260px">
+
                                 <img src="assets/michelleHorovits.jpeg" alt="">
                             </div>
 
@@ -271,7 +301,7 @@
             <div class="post-container container">
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/paternidade.jpg" width="260px" height="260px">
+                        <img src="assets/paternidade.jpg">
                     </div>
 
                     <!--categorias do post-->
@@ -287,7 +317,7 @@
                         </p>
 
                         <!--categorias e link do post-->
-                        <div class="category-btn"> <a href=""> Paternidade </a> </div>
+                        <div class="category-btn"> <a href="paternidade.html"> Paternidade </a> </div>
 
                         <!-- Img/Escrita Post -->
                         <div class="post-profile">
@@ -310,7 +340,7 @@
             <div class="post-container container">
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/deprePosParto.jpg" width="260px" height="260px">
+                        <img src="assets/deprePosParto.jpg">
                     </div>
 
                     <!--categorias do post-->
@@ -325,7 +355,7 @@
                         </p>
 
                         <!--categorias e link do post-->
-                        <div class="category-btn"> <a href=""> Bem-Estar </a> </div>
+                        <div class="category-btn"> <a href="psicologia.html"> Psicologia </a> </div>
 
                         <!-- Img/Escrita Post -->
                         <div class="post-profile">
@@ -349,7 +379,7 @@
             <div class="post-container container">
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/piramideAlimentar.jpg" width="260px" height="260px">
+                        <img src="assets/piramideAlimentar.jpg">
                     </div>
 
                     <!--categorias do post-->
@@ -365,7 +395,7 @@
                         </p>
 
                         <!--categorias e link do post-->
-                        <div class="category-btn"> <a href=""> Alimentação</a> </div>
+                        <div class="category-btn"> <a href="alimentacao.html"> Alimentação</a> </div>
 
                         <!-- Img/Escrita Post -->
                         <div class="post-profile">
@@ -389,7 +419,7 @@
     <!--FIM SEÇÃO PRINCIPAL-->
 
     <!--INÍCIO FOOTER-->
-    <footer class="w-full bg-azul-principal flex justify-center md:items-center py-12 px-8">
+    <footer class="w-full bg-salmao flex justify-center md:items-center py-12 px-8">
         <div class="flex flex-col md:flex-row gap-12">
             <div class="flex flex-col text-center gap-4">
                 <h2 class="font-bold text-2xl text-white">Departamentos</h2>
@@ -422,21 +452,21 @@
                 <div class="flex flex-row gap-4">
                     <a href="#">
                         <i
-                            class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                            class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
                     </a>
                     <a href="#">
                         <i
-                            class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                            class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
                     </a>
                     <a href="#">
                         <i
-                            class="fa-brands fa-facebook text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                            class="fa-brands fa-facebook text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-    <footer class="bg-azul-secundario w-full flex justify-center items-center py-3">
+    <footer class="bg-salmao-escuro w-full flex justify-center items-center py-3">
         <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados</span>
     </footer>
     <!--FIM FOOTER-->

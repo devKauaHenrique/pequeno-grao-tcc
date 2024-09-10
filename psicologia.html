@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--TAGS PADRÕES-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--META TAG OG-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pequeno Grão - Para papais e mamães de 1º viagem!" />
+    <meta property="og:image" content="https://pequeno-grao-tcc.vercel.app/assets/logo.ico" />
+    <meta property="og:description" content="O melhor site auxiliador para papais e mamães" />
+    <meta property="og:site_name" content="Pequeno Grão" />
+
+    <!--TAGS FONTE IMPORTADA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!--TAGS ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--TAG CSS-->
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="styles/header-brecho.css">
+    <link rel="stylesheet" href="styles/post.css">
+
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="blog.js"></script>
+
+    <title>Psicologia</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #D4AA78;
+            /* Ajuste conforme necessário */
+            color: white;
+            text-align: center;
+            padding: 12px 8px;
+        }
+
+        .footer-bottom {
+            background-color: #18d828;
+            /* Ajuste conforme necessário */
+            color: white;
+            text-align: center;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-poppins overflow-x-hidden">
+    <!--INÍCIO SEÇÃO PRINCIPAL-->
+    <div class="main-content">
+
+        <!--INÍCIO HEADER-->
+        <nav class="bg-salmao">
+
+
+            <!--INÍCIO HEADER DESKTOP-->
+            <div class="w-full px-6 md:pl-12">
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex items-center">
+                        <a href="#" class="flex-shrink-0">
+
+                            <!--INÍCIO MENU-->
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Pesquisa</button>
+                                <div id="pesquisa" class="dropdown-content">
+                                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                    <a href="amamentacao.html"> Amamentação </a>
+                                    <a href="dicas.html">Dicas</a>
+                                    <a href="cuidados.html">Cuidados</a>
+                                    <a href="curiosidades.html">Curiosidades</a>
+                                    <a href="alimentacao.html">Alimentação</a>
+                                    <a href="psicologia.html">Psicologia</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="hidden md:flex items-center space-x-4 text-white text-xl font-medium">
+                        <ul class="flex gap-6 items-center">
+                            <li>
+                                <a href="index.html" class="">Início</a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="brecho.html" class="">Brechó</a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="px-6 py-1 rounded-lg border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+                    </div>
+
+
+
+                    <!--INÍCIO BOTÃO MENU-->
+                    <div class="-mr-2 flex md:hidden">
+                        <button id="btn-menu" type="button"
+                            class="inline-flex items-center justify-center px-4 py-2 rounded-md hover:bg-salmao-escuro focus:outline-none transition duration-300 ease-in-out"
+                            aria-label="Menu" aria-expanded="false">
+                            <i class="fa-solid fa-bars text-xl text-white"></i>
+                        </button>
+                    </div>
+                    <!--FIM BOTÃO MENU-->
+                </div>
+            </div>
+            <!--FIM HEADER DESKTOP-->
+
+            <!--INÍCIO HEADER MOBILE-->
+            <div id="menu"
+                class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
+                <a href="index.html" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
+                <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
+                <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
+                <a href="#"
+                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+            </div>
+            <!--FIM HEADER MOBILE-->
+
+        </nav>
+        <!--FIM HEADER-->
+
+    </div>
+</body>
+
+<div class="card-container">
+    <div class="card">
+        <img src="imagens/importanciaFamilia.jpg">
+        <div class="card-content">
+            <h3>Qual a importância de uma família para o desenvolvimento da criança?</h3>
+            <p> As famílias são fontes de carinho e cuidado. São elas que se apoiam e colaboram para o bem-estar.
+            </p>
+            <a href="https://www.educacaoconquista.com.br/blog/familia/qual-e-a-importancia-da-familia-no-desenvolvimento-e-na-aprendizagem-das-criancas/#:~:text=As%20fam%C3%ADlias%20s%C3%A3o%20fontes%20de,estabelece%20o%20in%C3%ADcio%20da%20socializa%C3%A7%C3%A3o." target="blank"
+                class="btn"> Ver Mais</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagens/depressao.jpeg">
+        <div class="card-content">
+            <h3> Depressão Pós parto </h3>
+            <p> É uma condição de profunda tristeza, desespero e falta de esperança que acontece logo após o parto.
+                Raramente, a situação pode se complicar e
+                evoluir para uma forma mais agressiva e extrema da depressão pós-parto, conhecida como psicose
+                pós-parto.
+                A depressão pós-parto traz inúmeras consequências ao vínculo da mãe com o bebê, sobretudo no que se
+                refere ao aspecto afetivo.</p>
+            <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/depressao-pos-parto" target="blank" class="btn"> Ver
+                Mais</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagens/criancaTriste.jpeg">
+        <div class="card-content">
+            <h3>8 sinais para identificar a depressão infantil </h3>
+            <p> A depressão infantil é um assunto sério que deve ser tratado com muita cautela. Pode-se pensar que é
+                impossível que seres tão enérgicos e alegres possam ter depressão, mas as crianças também estão tão
+                sujeitas quanto adultos, a desenvolverem condições emocionais de profunda tristeza e psicológicas
+                graves.
+            </p>
+            <a href="https://www.psicologo.com.br/blog/8-sinais-para-identificar-a-depressao-infantil/" target="blank" class="btn">Ver
+                mais</a>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <img src="imagens/depressao-pos-parto-masculina.jpg">
+        <div class="card-content">
+            <h3>Depressão paterna e seu impacto na paternidade</h3>
+            <p>Os pesquisadores descobriram que: “Em geral, 7% dos pais têm depressão. Em análises bivariadas, pais
+                deprimidos têm maior probabilidade, quando comparados com pais não deprimidos, de relatar agressões a
+                seus filhos de 1 ano de idade no mês anterior (41% comparado com 13%)
+            </p>
+            <a href="https://www.sbmfc.org.br/depressao-paterna-e-seu-impacto-na-paternidade/#:~:text=Os%20pesquisadores%20descobriram%20que%3A%20%E2%80%9CEm,41%25%20comparado%20com%2013%25)." target="blank"
+                class="btn"> Ver Mais </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagens/familia-saudavel-aprenda-boas-praticas-de-convivencia.jpg">
+        <div class="card-content">
+            <h3> A importância dos laços familiares na construção psicológica </h3>
+            <p>É através das primeiras experiências sociais e de construção de vínculos que a criança desenvolve seus
+                valores e personalidade, além de serem a base onde o seu psicológico e emocional serão fundadas.
+                Crianças que não receberam amparo e carinho podem desenvolver traumas.
+            </p>
+            <a href=" https://www.tuasaude.com/como-ajudar-o-bebe-a-sentar-mais-rapido/" target="blank" class="btn"> Ver Mais </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagens/materia_maes.jpg">
+        <div class="card-content">
+            <h3>“Pãe” não existe: mães e pais solo, sim</h3>
+            <p>Voltar do início
+                “Se existe pãe, por que ninguém fala em mai?” Vi essa chamada numa matéria de revista e achei apropriado
+                e interessante trazer para o debate.
+
+                Antes de mais nada, queria que vocês refletissem comigo sobre esse termo. Sei que pode parecer
+                uma discussão boba, que alguém pode dizer: “Ah, Samara! Mas deixa ela se chamar e gostar de ser chamada
+                de pãe”.
+            </p>
+            <a href="https://www.ninhosdobrasil.com.br/pae-mae-solo-pai-solo" target="blank" class="btn"> Ver Mais </a>
+        </div>
+
+    </div>
+</div>
+
+<!--INÍCIO FOOTER-->
+<footer class="w-full bg-salmao flex justify-center md:items-center py-12 px-8">
+    <div class="flex flex-col md:flex-row gap-12">
+        <div class="flex flex-col text-center gap-4">
+            <h2 class="font-bold text-2xl text-white">Departamentos</h2>
+            <a class="text-white text-xl md:text-base" href="#">Blog</a>
+            <a class="text-white text-xl md:text-base" href="#">Brechó</a>
+            <a class="text-white text-xl md:text-base" href="#">Grupo do Whatsapp</a>
+        </div>
+        <div class="flex flex-col text-center gap-4">
+            <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>
+            <a class="text-white text-xl md:text-base" href="#">Ideias de nome para o seu bebê!</a>
+            <a class="text-white text-xl md:text-base" href="#">Dicas de alimentação na gravidez!</a>
+        </div>
+        <div class="flex flex-col items-center text-center gap-4">
+            <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
+            <div class="flex items-center gap-3 md:gap-2">
+                <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
+                <a class="text-white text-xl md:text-base" href="#">(11) 95373-6849</a>
+            </div>
+            <div class="flex items-center gap-3 md:gap-2">
+                <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
+                <a class="text-white text-xl md:text-base" href="#">pequenograo@gmail.com</a>
+            </div>
+            <div class="flex items-center gap-3 md:gap-2">
+                <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
+                <a class="text-white text-xl md:text-base" href="#">@pequeno_grao</a>
+            </div>
+        </div>
+        <div class="flex flex-col text-center items-center gap-4">
+            <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
+            <div class="flex flex-row gap-4">
+                <a href="#">
+                    <i
+                        class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                </a>
+                <a href="#">
+                    <i
+                        class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                </a>
+                <a href="#">
+                    <i
+                        class="fa-brands fa-facebook text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="bg-salmao-escuro w-full flex justify-center items-center py-3">
+    <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados</span>
+</footer>
+<!--FIM FOOTER-->
+
+<script src="script.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+
+</html>
+
+
+</html>

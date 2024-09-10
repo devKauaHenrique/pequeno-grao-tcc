@@ -48,7 +48,7 @@
             <div class="w-full px-6 md:pl-12">
                 <div class="flex items-center justify-between h-20">
                     <div class="flex items-center">
-                        <a href="#" class="flex-shrink-0">
+                        <a href="index.html" class="flex-shrink-0">
                             <img class="w-32" src="/assets/Logo_Pequeno_Grão.png" alt="Logo Pequeno Grão">
                         </a>
                     </div>
@@ -63,9 +63,19 @@
                             <li>
                                 <a href="brecho.html" class="">Brechó</a>
                             </li>
+                            <a href="login.html">
+                                <button
+                                    class="px-6 py-1 rounded-lg border border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out"
+                                    id="btn-login">
+                                    Login
+                                </button>
+                                <button
+                                    class="px-6 py-1 rounded-lg border hidden border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out"
+                                    id="btn-logout" onclick="logout()">
+                                    Sair
+                                </button>
+                            </a>
                         </ul>
-                        <a href="#"
-                            class="px-6 py-1 rounded-lg border border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out">Login</a>
                     </div>
 
                     <!--INÍCIO BOTÃO MENU-->
@@ -87,8 +97,18 @@
                 <a href="#" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
                 <a href="blog.html" id="link" class="text-white block px-3 py-1">Blog</a>
                 <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
-                <a href="#"
-                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out">Login</a>
+                <a href="login.html">
+                    <button
+                        class="px-6 py-1 rounded-lg border border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out"
+                        id="btn-login">
+                        Login
+                    </button>
+                    <button
+                        class="px-6 py-1 rounded-lg border hidden border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out"
+                        id="btn-logout" onclick="logout()">
+                        Sair
+                    </button>
+                </a>
             </div>
             <!--FIM HEADER MOBILE-->
 
@@ -259,7 +279,9 @@
                 <h2 class="font-bold text-2xl text-white">Departamentos</h2>
                 <a class="text-white text-xl md:text-base" href="blog.html">Blog</a>
                 <a class="text-white text-xl md:text-base" href="brecho.html">Brechó</a>
-                <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo do Whatsapp</a>
+                <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo
+                    do Whatsapp</a>
+                <a class="text-white text-xl md:text-base" href="empresa.html">Site Makers</a>
             </div>
             <div class="flex flex-col text-center gap-4">
                 <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>
@@ -270,7 +292,9 @@
                 <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
                 <div class="flex items-center gap-3 md:gap-2">
                     <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
-                    <a class="text-white text-xl md:text-base" href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11) 95373-6849</a>
+                    <a class="text-white text-xl md:text-base"
+                        href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11)
+                        95373-6849</a>
                 </div>
                 <div class="flex items-center gap-3 md:gap-2">
                     <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
@@ -278,13 +302,15 @@
                 </div>
                 <div class="flex items-center gap-3 md:gap-2">
                     <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
-                    <a class="text-white text-xl md:text-base" href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
+                    <a class="text-white text-xl md:text-base"
+                        href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
                 </div>
             </div>
             <div class="flex flex-col text-center items-center gap-4">
                 <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
                 <div class="flex flex-row gap-4">
-                    <a href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <a
+                        href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                         <i
                             class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-azul-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
                     </a>
@@ -305,6 +331,29 @@
     </footer>
     <!--FIM FOOTER-->
 
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+    <script src="scripts/firebase-init.js"></script>
+    <script>
+        let botaoLogin = document.getElementById("btn-login");
+        let botaoLogout = document.getElementById("btn-logout");
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+
+                botaoLogin.style.display = "none";
+                botaoLogout.style.display = "block";
+            }
+        })
+
+        function logout() {
+            firebase.auth().signOut().then(() => {
+                window.location.href = "login.html"
+            }).catch(() => {
+                alert("Erro ao fazer logout!")
+            })
+        }
+    </script>
     <script src="script.js"></script>
     <script src="scripts/menu.js"></script>
 </body>

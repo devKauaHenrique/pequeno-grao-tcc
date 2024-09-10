@@ -51,23 +51,19 @@ function register(){
     firebase.auth().createUserWithEmailAndPassword(email, password).then(() => {
         window.location.href = "login.html";
     }).catch(error =>{
-        alert(getErrorMessage(error))
+        Toastify({
+            text: "Esse email já está em uso",
+            duration: 5000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#ef4444",
+            },
+        }).showToast();
     })
 }
-
-function getErrorMessage(error){
-    if(error.code == "auth/email-already-in-use"){
-        return "Esse email já está em uso"
-    }
-    return error.message;
-}
-
-// function getErrorMessage(error){
-//     if(error.code == "auth/email-already-in-use"){
-//         return "Esse email já está em uso"
-//     }
-//     return error.message;
-// }
 
 function validatePasswordsMatch(){
     const password = form.password().value;

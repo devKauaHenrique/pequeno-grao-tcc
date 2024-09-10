@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--TAGS PADRÕES-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--META TAG OG-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pequeno Grão - Para papais e mamães de 1º viagem!" />
+    <meta property="og:image" content="https://pequeno-grao-tcc.vercel.app/assets/logo.ico" />
+    <meta property="og:description" content="O melhor site auxiliador para papais e mamães" />
+    <meta property="og:site_name" content="Pequeno Grão" />
+
+    <!--TAGS FONTE IMPORTADA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!--TAGS ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--TAG CSS-->
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="styles/header-brecho.css">
+    <link rel="stylesheet" href="styles/post.css">
+
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="blog.js"></script>
+
+    <title> Curiosidades </title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #D4AA78;
+            /* Ajuste conforme necessário */
+            color: white;
+            text-align: center;
+            padding: 12px 8px;
+        }
+
+        .footer-bottom {
+            background-color: #18d828;
+            /* Ajuste conforme necessário */
+            color: white;
+            text-align: center;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-poppins overflow-x-hidden">
+    <!--INÍCIO SEÇÃO PRINCIPAL-->
+    <div class="main-content">
+
+        <!--INÍCIO HEADER-->
+        <nav class="bg-salmao">
+
+
+            <!--INÍCIO HEADER DESKTOP-->
+            <div class="w-full px-6 md:pl-12">
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex items-center">
+                        <a href="#" class="flex-shrink-0">
+
+                            <!--INÍCIO MENU-->
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Pesquisa</button>
+                                <div id="pesquisa" class="dropdown-content">
+                                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                    <a href="amamentacao.html"> Amamentação </a>
+                                    <a href="dicas.html">Dicas</a>
+                                    <a href="cuidados.html">Cuidados</a>
+                                    <a href="curiosidades.html">Curiosidades</a>
+                                    <a href="alimentacao.html">Alimentação</a>
+                                    <a href="psicologia.html">Psicologia</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="hidden md:flex items-center space-x-4 text-white text-xl font-medium">
+                        <ul class="flex gap-6 items-center">
+                            <li>
+                                <a href="index.html" class="">Início</a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="brecho.html" class="">Brechó</a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="px-6 py-1 rounded-lg border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+                    </div>
+
+
+
+                    <!--INÍCIO BOTÃO MENU-->
+                    <div class="-mr-2 flex md:hidden">
+                        <button id="btn-menu" type="button"
+                            class="inline-flex items-center justify-center px-4 py-2 rounded-md hover:bg-salmao-escuro focus:outline-none transition duration-300 ease-in-out"
+                            aria-label="Menu" aria-expanded="false">
+                            <i class="fa-solid fa-bars text-xl text-white"></i>
+                        </button>
+                    </div>
+                    <!--FIM BOTÃO MENU-->
+                </div>
+            </div>
+            <!--FIM HEADER DESKTOP-->
+
+            <!--INÍCIO HEADER MOBILE-->
+            <div id="menu"
+                class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
+                <a href="index.html" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
+                <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
+                <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
+                <a href="#"
+                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+            </div>
+            <!--FIM HEADER MOBILE-->
+
+        </nav>
+        <!--FIM HEADER-->
+
+    </div>
+</body>
+
+<div class="card-container">
+    <div class="card">
+        <img src="imagens/sorriso.jpg">
+        <div class="card-content">
+            <h3>9 curiosidades sobre as crianças, de acordo com a ciência</h3>
+            <p> Amor de mãe não tem preço, nem idade e ainda pode ser benéfico à saúde. De acordo com um estudo,
+                crianças cujas mães demonstram mais afeto e apoio emocional têm um importante crescimento em uma área do
+                cérebro chamada... Venha Descobrir!</p>
+            <a href="https://www.minhavida.com.br/materias/materia-19305" class="btn"> Ver Mais</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagens/curiosidades-gravidezjpg.jpg">
+        <div class="card-content">
+            <h3>8 curiosidades que ninguém te conta sobre gravidez e nascimento</h3>
+            <p> O útero aumenta muito de tamanho
+                Geralmente, quando não está grávida, o útero de uma mulher tem o tamanho de uma laranja. Durante a
+                gestação, porém, ele começa a crescer e, lá para o terceiro trimestre, pode ter o tamanho... Venha
+                Descobrir!
+            </p>
+            <a href="https://www.clinicaberger.com/post/8-curiosidades-que-ninguem-te-conta-sobre-gravidez-e-nascimento/10" target="blank"
+                class="btn"> Ver Mais</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagens/bem-esta-gravidez-saude-emocional.jpg">
+        <div class="card-content">
+            <h3>Curiosidades da gravidez: Verdades e Mitos</h3>
+            <p> Seus pés crescem
+                Devido ao aumento da flexibilidade dos ligamentos e ossos durante a gravidez, o pé pode
+                aumentar em até um número. Se isso acontecer, pode ser que, quando tiver o bebê, seus pés retornem ao
+                comprimento original mas talvez eles acabem... Venha Descobrir!
+            </p>
+            <a href="https://nace.igenomix.com.br/blog/10-curiosidades-da-gravidez-verdades-e-mitos/" target="blank" class="btn">Ver
+                mais</a>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <img src="imagens/crianas-curiosas-a-curiosidade-das-crianas_A.jpg">
+        <div class="card-content">
+            <h3>fatos sobre crianças que nem mesmo os pais sabem</h3>
+            <p> Qual a sua primeira lembrança? Eu posso garantir que ela é posterior aos seus 3 anos de idade. Esse
+                fenômeno tem nome, e se chama amnésia infantil...Venha descobrir!
+            </p> 
+            <a href="https://www.fatosdesconhecidos.com.br/7-fatos-surpreendentes-sobre-criancas-que-nem-mesmo-os-pais-sabem/" target="blank"
+                class="btn"> Ver Mais </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagens/recien-nacido-.jpg">
+        <div class="card-content">
+            <h3> 10 curiosidades dos recém-nascidos</h3>
+            <p> Possuem uma série de reflexos inatos.
+                Os bebés nascem com uma série de reflexos inatos que os ajudam a sobreviver e adaptar-se ao mundo
+                desde...Venha descobrir!
+            </p>
+            <a href="https://www.prematuridade.com/parto-prematuro?gad_source=1&gclid=Cj0KCQjw8--2BhCHARIsAF_w1gwr7lQyEHbMSl5UJL9hWEV2CAFwVkfeTuWtcOKLVIZv88oVpxJcu-kaAmL9EALw_wcB" target="blank"
+                class="btn"> Ver Mais </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagens/voce-sabe-quais-sao-os-direitos-e-deveres-do-pai-do-seu-filho.jpg">
+        <div class="card-content">
+            <h3> 6 fatos curiosos sobre a paternidade</h3>
+            <p>De acordo com um estudo, crianças que nascem parecidas com os pais tendem a ter uma saúde melhor do que a
+                média. Isso acontece porque os homens...Venha descobrir!
+
+            </p>
+            <a href="https://www.minhavida.com.br/materias/materia-19007" target="blank" class="btn"> Ver Mais </a>
+        </div>
+
+    </div>
+</div>
+
+<!--INÍCIO FOOTER-->
+<footer class="w-full bg-salmao flex justify-center md:items-center py-12 px-8">
+    <div class="flex flex-col md:flex-row gap-12">
+        <div class="flex flex-col text-center gap-4">
+            <h2 class="font-bold text-2xl text-white">Departamentos</h2>
+            <a class="text-white text-xl md:text-base" href="#">Blog</a>
+            <a class="text-white text-xl md:text-base" href="#">Brechó</a>
+            <a class="text-white text-xl md:text-base" href="#">Grupo do Whatsapp</a>
+        </div>
+        <div class="flex flex-col text-center gap-4">
+            <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>
+            <a class="text-white text-xl md:text-base" href="#">Ideias de nome para o seu bebê!</a>
+            <a class="text-white text-xl md:text-base" href="#">Dicas de alimentação na gravidez!</a>
+        </div>
+        <div class="flex flex-col items-center text-center gap-4">
+            <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
+            <div class="flex items-center gap-3 md:gap-2">
+                <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
+                <a class="text-white text-xl md:text-base" href="#">(11) 95373-6849</a>
+            </div>
+            <div class="flex items-center gap-3 md:gap-2">
+                <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
+                <a class="text-white text-xl md:text-base" href="#">pequenograo@gmail.com</a>
+            </div>
+            <div class="flex items-center gap-3 md:gap-2">
+                <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
+                <a class="text-white text-xl md:text-base" href="#">@pequeno_grao</a>
+            </div>
+        </div>
+        <div class="flex flex-col text-center items-center gap-4">
+            <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
+            <div class="flex flex-row gap-4">
+                <a href="#">
+                    <i
+                        class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                </a>
+                <a href="#">
+                    <i
+                        class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                </a>
+                <a href="#">
+                    <i
+                        class="fa-brands fa-facebook text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="bg-salmao-escuro w-full flex justify-center items-center py-3">
+    <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados</span>
+</footer>
+<!--FIM FOOTER-->
+
+<script src="script.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+
+</html>

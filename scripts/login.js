@@ -1,6 +1,6 @@
 firebase.auth().onAuthStateChanged(function (user){
     if(user){
-        window.location.href = "index.html"
+        window.location.href = "index.html";
     }
 })
 
@@ -23,7 +23,18 @@ function login(){
             form.email().value, form.password().value).then(response => {
             window.location.href = "index.html";
         }).catch(error => {
-            alert("Usuário não encontrado");
+            
+        Toastify({
+            text: "Usuário não encontrado",
+            duration: 5000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#ef4444",
+            },
+        }).showToast();
         });
 }
 
@@ -89,5 +100,7 @@ const form = {
     emailRequiredError: () => document.getElementById("email-required-error"),
     loginButton: () => document.getElementById("login-button"),
     password: () => document.getElementById("password"),
-    passwordRequiredError: () => document.getElementById("password-required-error")
+    passwordRequiredError: () => document.getElementById("password-required-error"),
+    botaoLogin: () => document.getElementById("btn-login"),
+    botaoLogout: () => document.getElementById("btn-logout")
 }

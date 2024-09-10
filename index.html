@@ -55,8 +55,20 @@
                             <li>
                                 <a href="brecho.html" class="">Brechó</a>
                             </li>
+                            <a href="login.html">
+                                <button
+                                    class="px-6 py-1 rounded-lg border border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out"
+                                    id="btn-login">
+                                    Login
+                                </button>
+                                <button
+                                    class="px-6 py-1 rounded-lg border hidden border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out"
+                                    id="btn-logout" onclick="logout()">
+                                    Sair
+                                </button>
+                            </a>
                         </ul>
-                        <a href="login.html" class="px-6 py-1 rounded-lg border border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out">Login</a>
+                        <!-- <a href="login.html" class="px-6 py-1 rounded-lg border border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out">Login</a> -->
                     </div>
 
                     <!--INÍCIO BOTÃO MENU-->
@@ -78,7 +90,18 @@
                 <a href="#" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
                 <a href="blog.html" id="link" class="text-white block px-3 py-1">Blog</a>
                 <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
-                <a href="login.html" class="px-6 py-1 rounded-lg text-white border border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out">Login</a>
+                <a href="login.html">
+                    <button
+                        class="px-6 py-1 rounded-lg border border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out"
+                        id="btn-login">
+                        Login
+                    </button>
+                    <button
+                        class="px-6 py-1 rounded-lg border hidden border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out"
+                        id="btn-logout" onclick="logout()">
+                        Sair
+                    </button>
+                </a>
             </div>
             <!--FIM HEADER MOBILE-->
 
@@ -88,10 +111,15 @@
         <!--INÍCIO TEXTOS-->
         <section class="w-full h-screen-minus-header-1 flex flex-col items-center justify-center px-5 md:px-12">
             <div class="w-full text-center flex flex-col items-center md:items-start">
-                <span class="text-rosa-principal text-xl font-bold" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Olá mamãe, seja bem vinda ao</span>
-                <h1 class="text-rosa-principal text-5xl font-bold" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Pequeno Grão</h1>
-                <p class="text-white text-center mt-3 mb-2 text-lg md:px-0 max-w-sm md:text-left" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">A pequeno grão proporciona para as mamães um ambiente confortável e seguro para esse momento tão especial na vida de uma mãe!</p>
-                <a href="#section-2" class="w-40 mt-3 bg-rosa-principal text-white font-semibold rounded-lg px-4 py-1" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">Conheça mais</a>
+                <span class="text-rosa-principal text-xl font-bold" data-aos="fade-up" data-aos-delay="300"
+                    data-aos-duration="1000">Olá mamãe, seja bem vinda ao</span>
+                <h1 class="text-rosa-principal text-5xl font-bold" data-aos="fade-up" data-aos-delay="500"
+                    data-aos-duration="1000">Pequeno Grão</h1>
+                <p class="text-white text-center mt-3 mb-2 text-lg md:px-0 max-w-sm md:text-left" data-aos="fade-up"
+                    data-aos-delay="700" data-aos-duration="1000">A pequeno grão proporciona para as mamães um ambiente
+                    confortável e seguro para esse momento tão especial na vida de uma mãe!</p>
+                <a href="#section-2" class="w-40 mt-3 bg-rosa-principal text-white font-semibold rounded-lg px-4 py-1"
+                    data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">Conheça mais</a>
             </div>
 
             <!--INÍCIO BOTÃO PAI-->
@@ -163,39 +191,50 @@
         <!-- INÍCIO CARDS SERVIÇOS-->
         <div class="flex flex-col lg:flex-row items-center mt-8 mb-4 gap-6 lg:gap-12">
             <!-- CARD 1-->
-            <div class="bg-white max-w-80 rounded-md flex flex-col items-center hover:shadow-2xl hover:shadow-rosa-secundario transition duration-700 ease-in-out fundo-projetos">
+            <div
+                class="bg-white max-w-80 rounded-md flex flex-col items-center hover:shadow-2xl hover:shadow-rosa-secundario transition duration-700 ease-in-out fundo-projetos">
                 <div>
                     <img class="rounded-t-md" src="assets/capa-blog.jpg" alt="Serviço - Blog">
                 </div>
                 <div class="mt-3 flex flex-col items-center px-4 mb-4">
                     <h2 class="text-rosa-principal font-bold text-3xl mb-3">Blog</h2>
-                    <p class="text-center text-base">A pequeno grão te proporciona um ambiente cheio de informações! Temos dicas de alimentação, ideias para nomes, curiosidades, cuidados que você deve ter, e muito mais!</p>
+                    <p class="text-center text-base">A pequeno grão te proporciona um ambiente cheio de informações!
+                        Temos dicas de alimentação, ideias para nomes, curiosidades, cuidados que você deve ter, e muito
+                        mais!</p>
                     <a class="bg-rosa-principal text-white text-lg font-semibold mt-3 px-5 py-2 rounded-md"
                         href="blog.html">Conheça o nosso blog</a>
                 </div>
             </div>
 
             <!-- CARD 2-->
-            <div class="bg-white max-w-80 rounded-md flex flex-col items-center hover:shadow-2xl hover:shadow-rosa-secundario transition duration-700 ease-in-out fundo-projetos">
+            <div
+                class="bg-white max-w-80 rounded-md flex flex-col items-center hover:shadow-2xl hover:shadow-rosa-secundario transition duration-700 ease-in-out fundo-projetos">
                 <div>
                     <img class="rounded-t-md" src="assets/capa-brechó.jpg" alt="Serviço - Brechó">
                 </div>
                 <div class="mt-3 flex flex-col items-center px-4 mb-4">
                     <h2 class="text-rosa-principal font-bold text-3xl mb-3">Brechó</h2>
-                    <p class="text-center text-base">Um espaço com produtinhos para o seu bebê de preço muito menor! Os produtos são doações, e você também pode doar algo do seu bebê entrando em contato com nossa equipe!</p>
-                    <a class="bg-rosa-principal text-white text-lg font-semibold mt-3 px-5 py-2 rounded-md" href="brecho.html">Conheça o nosso brechó</a>
+                    <p class="text-center text-base">Um espaço com produtinhos para o seu bebê de preço muito menor! Os
+                        produtos são doações, e você também pode doar algo do seu bebê entrando em contato com nossa
+                        equipe!</p>
+                    <a class="bg-rosa-principal text-white text-lg font-semibold mt-3 px-5 py-2 rounded-md"
+                        href="brecho.html">Conheça o nosso brechó</a>
                 </div>
-            </div>  
+            </div>
 
             <!-- CARD 3-->
-            <div class="bg-white max-w-80 rounded-md flex flex-col items-center hover:shadow-2xl hover:shadow-rosa-secundario transition duration-700 ease-in-out fundo-projetos">
+            <div
+                class="bg-white max-w-80 rounded-md flex flex-col items-center hover:shadow-2xl hover:shadow-rosa-secundario transition duration-700 ease-in-out fundo-projetos">
                 <div>
                     <img class="rounded-t-md" src="assets/capa-whatsapp.jpg" alt="Serviço - Whatsapp">
                 </div>
                 <div class="mt-3 flex flex-col items-center px-4 mb-4">
                     <h2 class="text-rosa-principal font-bold text-3xl mb-3">Whatsapp</h2>
-                    <p class="text-center text-base">A pequeno grão tem uma comunidade muito acolhedora, e temos um grupo cheio de mamães, e outro grupo cheio de papais para trocar informações, dicas e segurança para os novos papais!</p>
-                    <a class="bg-rosa-principal text-white text-lg font-semibold mt-3 px-5 py-2 rounded-md" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo do Whatsapp</a>
+                    <p class="text-center text-base">A pequeno grão tem uma comunidade muito acolhedora, e temos um
+                        grupo cheio de mamães, e outro grupo cheio de papais para trocar informações, dicas e segurança
+                        para os novos papais!</p>
+                    <a class="bg-rosa-principal text-white text-lg font-semibold mt-3 px-5 py-2 rounded-md"
+                        href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo do Whatsapp</a>
                 </div>
             </div>
 
@@ -210,73 +249,106 @@
 
         <div class="bg-rosa-principal rounded-md h-full max-w-80 lg:w-2/4 mt-8 mb-4 flex flex-col px-6 py-6">
             <label class="text-white font-semibold text-2xl" for="nome">Nome:</label>
-            <input class="rounded-md px-4 py-2 text-xl mt-2 outline-none" type="text" required placeholder="Digite seu nome" id="nome">
+            <input class="rounded-md px-4 py-2 text-xl mt-2 outline-none" type="text" required
+                placeholder="Digite seu nome" id="nome">
 
             <label class="text-white font-semibold text-2xl mt-4" for="email">Email:</label>
-            <input class="rounded-md px-4 py-2 text-xl mt-2 outline-none" type="text"required placeholder="Digite seu email" id="email">
+            <input class="rounded-md px-4 py-2 text-xl mt-2 outline-none" type="text" required
+                placeholder="Digite seu email" id="email">
 
             <label class="text-white font-semibold text-2xl mt-4" for="mensagem">Mensagem:</label>
-            <textarea class="rounded-md px-4 py-2 text-xl mt-2 outline-none" required placeholder="Digite sua mensagem" name="mensagem" id="mensagem"></textarea>
+            <textarea class="rounded-md px-4 py-2 text-xl mt-2 outline-none" required placeholder="Digite sua mensagem"
+                name="mensagem" id="mensagem"></textarea>
 
             <button class="bg-white text-rosa-principal font-bold text-xl mt-6 rounded-md py-2">Enviar</button>
         </div>
     </section>
-        <!--FIM SEÇÃO FEEDBACK-->
+    <!--FIM SEÇÃO FEEDBACK-->
 
-        <!--INÍCIO FOOTER-->
-        <footer class="w-full h-full bg-rosa-principal flex justify-center md:items-center py-12 px-8">
-            <div class="flex flex-col md:flex-row gap-12">
-                <div class="flex flex-col text-center gap-4">
-                    <h2 class="font-bold text-2xl text-white">Departamentos</h2>
-                    <a class="text-white text-xl md:text-base" href="blog.html">Blog</a>
-                    <a class="text-white text-xl md:text-base" href="brecho.html">Brechó</a>
-                    <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo do Whatsapp</a>
+    <!--INÍCIO FOOTER-->
+    <footer class="w-full h-full bg-rosa-principal flex justify-center md:items-center py-12 px-8">
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="flex flex-col text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Departamentos</h2>
+                <a class="text-white text-xl md:text-base" href="blog.html">Blog</a>
+                <a class="text-white text-xl md:text-base" href="brecho.html">Brechó</a>
+                <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo
+                    do Whatsapp</a>
+                <a class="text-white text-xl md:text-base" href="empresa.html">Site Makers</a>
+            </div>
+            <div class="flex flex-col text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>
+                <a class="text-white text-xl md:text-base" href="blog.html">Ideias de nome para o seu bebê!</a>
+                <a class="text-white text-xl md:text-base" href="blog.html">Dicas de alimentação na gravidez!</a>
+            </div>
+            <div class="flex flex-col items-center text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base"
+                        href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11)
+                        95373-6849</a>
                 </div>
-                <div class="flex flex-col text-center gap-4">
-                    <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>
-                    <a class="text-white text-xl md:text-base" href="blog.html">Ideias de nome para o seu bebê!</a>
-                    <a class="text-white text-xl md:text-base" href="blog.html">Dicas de alimentação na gravidez!</a>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base" href="#">pequenograo@gmail.com</a>
                 </div>
-                <div class="flex flex-col items-center text-center gap-4">
-                    <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
-                    <div class="flex items-center gap-3 md:gap-2">
-                        <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
-                        <a class="text-white text-xl md:text-base" href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11) 95373-6849</a>
-                    </div>
-                    <div class="flex items-center gap-3 md:gap-2">
-                        <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
-                        <a class="text-white text-xl md:text-base" href="#">pequenograo@gmail.com</a>
-                    </div>
-                    <div class="flex items-center gap-3 md:gap-2">
-                        <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
-                        <a class="text-white text-xl md:text-base" href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
-                    </div>
-                </div>
-                <div class="flex flex-col text-center items-center gap-4">
-                    <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
-                    <div class="flex flex-row gap-4">
-                        <a href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                            <i class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
-                        </a>
-                        <a href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">
-                            <i class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
-                        </a>
-                    </div>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base"
+                        href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
                 </div>
             </div>
-        </footer>
-        <footer class="bg-rosa-terciario w-full h-full flex justify-center items-center py-3">
-            <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados </span>
-        </footer>
-        <!--FIM FOOTER-->
+            <div class="flex flex-col text-center items-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
+                <div class="flex flex-row gap-4">
+                    <a
+                        href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <i
+                            class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                    <a href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">
+                        <i
+                            class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                    <a href="#">
+                        <i
+                            class="fa-brands fa-facebook text-white text-3xl md:text-xl bg-black hover:bg-rosa-secundario transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-rosa-terciario w-full h-full flex justify-center items-center py-3">
+        <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados </span>
+    </footer>
+    <!--FIM FOOTER-->
 
-        <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
-        <script src="scripts/firebase-init.js"></script>
-        <script src="script.js"></script>
-        <script src="scripts/menu.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+    <script src="scripts/firebase-init.js"></script>
+    <script>
+        let botaoLogin = document.getElementById("btn-login");
+        let botaoLogout = document.getElementById("btn-logout");
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+
+                botaoLogin.style.display = "none";
+                botaoLogout.style.display = "block";
+            }
+        })
+
+        function logout() {
+            firebase.auth().signOut().then(() => {
+                window.location.href = "login.html"
+            }).catch(() => {
+                alert("Erro ao fazer logout!")
+            })
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
+
 </html>

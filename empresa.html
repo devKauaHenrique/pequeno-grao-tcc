@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--TAGS PADRÕES-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--TAGS FONTE IMPORTADA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!--TAGS ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--TAG CSS-->
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="styles/header-brecho.css">
+    <link rel="stylesheet" href="styles/login.css">
+
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+
+    <title>Site Makers</title>
+</head>
+
+<body class="font-poppins overflow-x-hidden flex flex-col min-h-screen">
+
+    <!--INÍCIO SEÇÃO PRINCIPAL-->
+    <section class="flex-grow">
+
+        <!--INÍCIO HEADER-->
+        <nav class="bg-salmao">
+
+            <!--INÍCIO HEADER DESKTOP-->
+            <div class="w-full px-6 md:pl-12">
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex items-center">
+                        <a href="index.html" class="flex-shrink-0">
+                            <img class="w-32" src="/assets/Logo_Pequeno_Grão.png" alt="Logo Pequeno Grão">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4 md:mr-20 text-white text-xl font-medium">
+                        <ul class="flex gap-6 items-center">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="brecho.html">Brechó</a></li>
+                        </ul>
+                        <a href="login.html" class="px-6 py-1 rounded-lg border border-white hover:border-salmao hover:bg-white hover:text-salmao transition duration-700 ease-in-out">Login</a>
+                    </div>
+
+                    <!--INÍCIO BOTÃO MENU-->
+                    <div class="-mr-2 flex md:hidden text-black">
+                        <button id="btn-menu" type="button"
+                            class="inline-flex items-center justify-center px-4 py-2 rounded-md hover:bg-white hover:text-black focus:outline-none transition duration-300 ease-in-out"
+                            aria-label="Menu" aria-expanded="false">
+                            <i class="fa-solid fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                    <!--FIM BOTÃO MENU-->
+                </div>
+            </div>
+            <!--FIM HEADER DESKTOP-->
+
+            <!--INÍCIO HEADER MOBILE-->
+            <div id="menu"
+                class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
+                <a href="index.html" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
+                <a href="blog.html" id="link" class="text-white block px-3 py-1">Blog</a>
+                <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
+                <a href="login.html" class="px-6 py-1 rounded-lg text-white border border-white hover:border-salmao hover:bg-salmao transition duration-700 ease-in-out">Login</a>
+            </div>
+            <!--FIM HEADER MOBILE-->
+
+        </nav>
+        <!--FIM HEADER-->
+
+        <div class="flex flex-col items-center w-full px-6 py-10">
+            <h1 class="font-bold text-3xl mt-4">Site Makers</h1>
+            <div class="w-full flex flex-col md:flex-row md:max-w-7xl gap-4 md:gap-8 md:mt-6">
+                <div class="bg-black rounded-2xl mt-3">
+                    <img src="assets/logo-site-makers.png" alt="Logo Site Makers">
+                </div>
+                <div class="w-full flex flex-col items-center justify-center max-w-2xl gap-3 text-center">
+                    <p>A Site Makers é uma empresa de tecnologia especializada na criação e desenvolvimento de sites personalizados para empresas de todos os portes e setores. Com uma equipe de especialistas em design, programação e marketing digital, oferecemos soluções completas e inovadoras para garantir que nossos clientes tenham uma presença online moderna, funcional e impactante.</p>
+                    <p>Nosso foco é transformar ideias em plataformas digitais que se destacam pela usabilidade, desempenho e estética. Seja para criar um e-commerce robusto, um blog dinâmico ou um site institucional, a Site Makers está comprometida em entregar resultados de alta qualidade, sempre utilizando as melhores tecnologias do mercado.</p>
+                    <p>Acreditamos que cada projeto é único, por isso trabalhamos de forma colaborativa com nossos clientes, oferecendo suporte desde a concepção da ideia até a manutenção contínua, garantindo que o site esteja sempre atualizado e seguro. Na Site Makers, ajudamos a transformar sua visão em uma realidade digital.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--FIM SEÇÃO PRINCIPAL-->
+
+    <!--INÍCIO FOOTER-->
+    <footer class="bg-salmao w-full flex justify-center md:items-center py-12 px-8">
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="flex flex-col text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Departamentos</h2>
+                <a class="text-white text-xl md:text-base" href="blog.html">Blog</a>
+                <a class="text-white text-xl md:text-base" href="brecho.html">Brechó</a>
+                <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo do Whatsapp</a>
+                <a class="text-white text-xl md:text-base" href="empresa.html">Site Makers</a>
+            </div>
+            <div class="flex flex-col text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>
+                <a class="text-white text-xl md:text-base" href="blog.html">Ideias de nome para o seu bebê!</a>
+                <a class="text-white text-xl md:text-base" href="blog.html">Dicas de alimentação na gravidez!</a>
+            </div>
+            <div class="flex flex-col items-center text-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base" href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11) 95373-6849</a>
+                </div>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base" href="#">pequenograo@gmail.com</a>
+                </div>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base" href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
+                </div>
+            </div>
+            <div class="flex flex-col text-center items-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
+                <div class="flex flex-row gap-4">
+                    <a href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <i class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                    <a href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">
+                        <i class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-salmao-escuro w-full flex justify-center items-center py-3">
+        <span class="text-white text-xl md:text-base">&copy; Todos os direitos reservados</span>
+    </footer>
+    <!--FIM FOOTER-->
+
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

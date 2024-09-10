@@ -16,10 +16,10 @@ module.exports = {
         "vermelho-escuro": "#9d0d16",
         "verde": "#11bf00",
         "verde-escuro": "#31743f"
+        
       },
       backgroundImage: {
-        'home': "url(/assets/home.jpg)",
-        'login': "url(/assets/login.jpg)",
+        'home': "url(/assets/home.jpg)"
       },
       height: {
         'screen-minus-header-1': 'calc(100vh - 5rem)',

@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="styles/header-brecho.css">
     <link rel="stylesheet" href="styles/login.css">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
 
     <title>Registrar</title>
@@ -38,7 +40,7 @@
             <div class="w-full px-6 md:pl-12">
                 <div class="flex items-center justify-between h-20">
                     <div class="flex items-center">
-                        <a href="#" class="flex-shrink-0">
+                        <a href="index.html" class="flex-shrink-0">
                             <img class="w-32" src="/assets/Logo_Pequeno_Grão.png" alt="Logo Pequeno Grão">
                         </a>
                     </div>
@@ -85,24 +87,24 @@
             <form action="" class="bg-salmao rounded-xl px-6 py-6 w-full md:max-w-96 flex flex-col">
                 <div class="flex flex-col gap-1 mb-1">
                     <label for="" class="font-bold text-lg">Nome:</label>
-                    <input class="w-full rounded-lg" type="text" name="nome" placeholder="Digite seu nome" onchange="onChangeName()" id="name">
+                    <input class="w-full rounded-lg outline-none" type="text" name="nome" placeholder="Digite seu nome" onchange="onChangeName()" id="name">
                     <div><span class="error" id="name-required-error">Nome é obrigatório!</span></div>
                 </div>
                 <div class="flex flex-col gap-1 mb-1">
                     <label class="font-bold text-lg" for="">Email</label>
-                    <input class="w-full rounded-lg" type="email" name="email" placeholder="Digite seu email" onchange="onChangeEmail()" id="email">
+                    <input class="w-full rounded-lg outline-none" type="email" name="email" placeholder="Digite seu email" onchange="onChangeEmail()" id="email">
                     <div><span class="error" id="email-required-error">Email é obrigatório!</span></div>
                     <div><span class="error" id="email-invalid-error">Email inválido!</span></div>
                 </div>
                 <div class="flex flex-col gap-1 mb-1">
                     <label class="font-bold text-lg" for="">Senha</label>
-                    <input class="w-full rounded-lg" type="password" name="password" placeholder="Digite sua senha" onchange="onChangePassword()" id="password">
+                    <input class="w-full rounded-lg outline-none" type="password" name="password" placeholder="Digite sua senha" onchange="onChangePassword()" id="password">
                     <div><span class="error" id="password-required-error">Senha é obrigatório!</span></div>
                     <div><span class="error" id="password-min-length-error">Senha deve ter pelo menos 6 caracteres!</span></div>
                 </div>
                 <div class="flex flex-col gap-1 mb-2">
                     <label class="font-bold text-lg" for="">Confirmar senha</label>
-                    <input class="w-full rounded-lg" type="password" name="password" placeholder="Digite sua senha" onchange="onChangeConfirmPassword()" id="confirmPassword">
+                    <input class="w-full rounded-lg outline-none" type="password" name="password" placeholder="Digite sua senha" onchange="onChangeConfirmPassword()" id="confirmPassword">
                     <div><span class="error" id="password-doesnt-match-error">As senhas não são iguais!</span></div>
                 </div>
                 <div>
@@ -168,6 +170,7 @@
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
     <script src="scripts/firebase-init.js"></script>
     <script src="scripts/registro.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="scripts/validations.js"></script>
     <script src="scripts/menu.js"></script>
 </body>
