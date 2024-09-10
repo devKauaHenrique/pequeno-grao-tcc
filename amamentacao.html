@@ -286,13 +286,36 @@
 </footer>
 <!--FIM FOOTER-->
 
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+    <script src="scripts/firebase-init.js"></script>
+    <script>
+        let botaoLogin = document.getElementById("btn-login");
+        let botaoLogout = document.getElementById("btn-logout");
+        let botaoLogin2 = document.getElementById("btn-login-2");
+        let botaoLogout2 = document.getElementById("btn-logout-2");
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+
+                botaoLogin.style.display = "none";
+                botaoLogout.style.display = "block";
+                botaoLogin2.style.display = "none";
+                botaoLogout2.style.display = "block";
+            }
+        })
+
+        function logout() {
+            firebase.auth().signOut().then(() => {
+                window.location.href = "login.html"
+            }).catch(() => {
+                alert("Erro ao fazer logout!")
+            })
+        }
+    </script>
 <script src="script.js"></script>
 <script src="scripts/menu.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-
 </body>
 
 </html>

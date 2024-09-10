@@ -99,13 +99,13 @@
                 <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
                 <a href="login.html">
                     <button
-                        class="px-6 py-1 rounded-lg border border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out"
-                        id="btn-login">
+                        class="px-6 py-1 rounded-lg border text-white border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out w-full"
+                        id="btn-login-2">
                         Login
                     </button>
                     <button
-                        class="px-6 py-1 rounded-lg border hidden border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out"
-                        id="btn-logout" onclick="logout()">
+                        class="px-6 py-1 rounded-lg text-white border hidden border-white hover:border-azul-principal hover:bg-azul-principal transition duration-700 ease-in-out w-full"
+                        id="btn-logout-2" onclick="logout()">
                         Sair
                     </button>
                 </a>
@@ -337,12 +337,16 @@
     <script>
         let botaoLogin = document.getElementById("btn-login");
         let botaoLogout = document.getElementById("btn-logout");
+        let botaoLogin2 = document.getElementById("btn-login-2");
+        let botaoLogout2 = document.getElementById("btn-logout-2");
 
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
 
                 botaoLogin.style.display = "none";
                 botaoLogout.style.display = "block";
+                botaoLogin2.style.display = "none";
+                botaoLogout2.style.display = "block";
             }
         })
 

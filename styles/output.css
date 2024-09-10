@@ -3042,6 +3042,11 @@ html{
   border-color: rgb(212 170 120 / var(--tw-border-opacity));
 }
 
+.hover\:border-salmao-escuro:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(173 125 68 / var(--tw-border-opacity));
+}
+
 .hover\:bg-azul-principal:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(41 113 211 / var(--tw-bg-opacity));

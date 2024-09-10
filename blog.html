@@ -30,13 +30,9 @@
 
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
 
+    <script src="scripts/blog.js"></script>
 
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="blog.js"></script>
-
-    <title>Pequeno Grão</title>
+    <title>Blog</title>
     <style>
         html,
         body {
@@ -111,8 +107,18 @@
                                 <a href="brecho.html" class="">Brechó</a>
                             </li>
                         </ul>
-                        <a href="#"
-                            class="px-6 py-1 rounded-lg border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+                        <a href="login.html">
+                            <button
+                                class="px-6 py-1 rounded-lg border text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                                id="btn-login">
+                                Login
+                            </button>
+                            <button
+                                class="px-6 py-1 rounded-lg border hidden text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                                id="btn-logout" onclick="logout()">
+                                Sair
+                            </button>
+                        </a>
                     </div>
 
 
@@ -136,8 +142,18 @@
                 <a href="index.html" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
                 <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
                 <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
-                <a href="#"
-                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+                <a href="login.html">
+                    <button
+                        class="px-6 py-1 rounded-lg border text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                        id="btn-login">
+                        Login
+                    </button>
+                    <button
+                        class="px-6 py-1 rounded-lg border hidden text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                        id="btn-logout" onclick="logout()">
+                        Sair
+                    </button>
+                </a>
             </div>
             <!--FIM HEADER MOBILE-->
 
@@ -471,13 +487,35 @@
     </footer>
     <!--FIM FOOTER-->
 
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+    <script src="scripts/firebase-init.js"></script>
+    <script>
+        let botaoLogin = document.getElementById("btn-login");
+        let botaoLogout = document.getElementById("btn-logout");
+        let botaoLogin2 = document.getElementById("btn-login-2");
+        let botaoLogout2 = document.getElementById("btn-logout-2");
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+
+                botaoLogin.style.display = "none";
+                botaoLogout.style.display = "block";
+                botaoLogin2.style.display = "none";
+                botaoLogout2.style.display = "block";
+            }
+        })
+
+        function logout() {
+            firebase.auth().signOut().then(() => {
+                window.location.href = "login.html"
+            }).catch(() => {
+                alert("Erro ao fazer logout!")
+            })
+        }
+    </script>
     <script src="script.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
 </body>
 
 </html>
