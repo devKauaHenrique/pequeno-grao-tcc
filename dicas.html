@@ -30,11 +30,7 @@
 
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
 
-
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="blog.js"></script>
+    <script src="scripts/blog.js"></script>
 
     <title>Dicas</title>
     <style>
@@ -84,9 +80,8 @@
 
                             <!--INÍCIO MENU-->
                             <div class="dropdown">
-                                <button onclick="myFunction()" class="dropbtn">Pesquisa</button>
+                                <button onclick="myFunction()" class="dropbtn">Menu</button>
                                 <div id="pesquisa" class="dropdown-content">
-                                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
                                     <a href="amamentacao.html"> Amamentação </a>
                                     <a href="dicas.html">Dicas</a>
                                     <a href="cuidados.html">Cuidados</a>
@@ -111,8 +106,18 @@
                                 <a href="brecho.html" class="">Brechó</a>
                             </li>
                         </ul>
-                        <a href="#"
-                            class="px-6 py-1 rounded-lg border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+                        <a href="login.html">
+                            <button
+                                class="px-6 py-1 rounded-lg border text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                                id="btn-login">
+                                Login
+                            </button>
+                            <button
+                                class="px-6 py-1 rounded-lg border hidden text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                                id="btn-logout" onclick="logout()">
+                                Sair
+                            </button>
+                        </a>
                     </div>
 
 
@@ -136,8 +141,18 @@
                 <a href="index.html" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
                 <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
                 <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
-                <a href="#"
-                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+                <a href="login.html">
+                    <button
+                        class="px-6 py-1 rounded-lg border text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                        id="btn-login">
+                        Login
+                    </button>
+                    <button
+                        class="px-6 py-1 rounded-lg border hidden text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                        id="btn-logout" onclick="logout()">
+                        Sair
+                    </button>
+                </a>
             </div>
             <!--FIM HEADER MOBILE-->
 
@@ -155,8 +170,8 @@
             <p> Cada vez mais, os papais têm se envolvido em todas as etapas da gestação e dos cuidados com o bebê e com
                 a mamãe.
             </p>
-            <a href="https://maternidadebrasilia.com.br/pt/sobre-nos/blog/pai-de-primeira-viagem-dicas-para-voce-que-tera-seu-primeiro-filho" target="blank"
-                class="btn"> Ver Mais</a>
+            <a href="https://maternidadebrasilia.com.br/pt/sobre-nos/blog/pai-de-primeira-viagem-dicas-para-voce-que-tera-seu-primeiro-filho"
+                target="blank" class="btn"> Ver Mais</a>
         </div>
     </div>
 
@@ -165,8 +180,8 @@
         <div class="card-content">
             <h3>8 dicas práticas para facilitar o trabalho de parto </h3>
             <p> Aumentar as chances de um parto normal; hábitos e atividades podem ser decisivos neste momento. </p>
-            <a href="https://bebe.abril.com.br/parto-e-pos-parto/8-dicas-praticas-para-facilitar-o-trabalho-de-parto/mobile?utm_source=google&utm_medium=cpc&utm_campaign=eda_bebe_audiencia_institucional-Performance-Max&gad_source=1&gclid=Cj0KCQjw8--2BhCHARIsAF_w1gwAmiisACHTcP5M--3EY9X-H0d7SAgqOPaPi340YL3DDVC7gp7BG80aAqCIEALw_wcB" target="blank"
-                class="btn"> Ver Mais</a>
+            <a href="https://bebe.abril.com.br/parto-e-pos-parto/8-dicas-praticas-para-facilitar-o-trabalho-de-parto/mobile?utm_source=google&utm_medium=cpc&utm_campaign=eda_bebe_audiencia_institucional-Performance-Max&gad_source=1&gclid=Cj0KCQjw8--2BhCHARIsAF_w1gwAmiisACHTcP5M--3EY9X-H0d7SAgqOPaPi340YL3DDVC7gp7BG80aAqCIEALw_wcB"
+                target="blank" class="btn"> Ver Mais</a>
         </div>
     </div>
 
@@ -177,8 +192,8 @@
             <p> Quanto mais a data do parto se aproxima, maiores são os medos e a ansiedade das mamães de primeira
                 viagem.
             </p>
-            <a href="https://blog.cordvida.com.br/dicas-basicas-e-essenciais-para-mamaes-de-primeira-viagem/" target="blank"
-                class="btn">Ver mais</a>
+            <a href="https://blog.cordvida.com.br/dicas-basicas-e-essenciais-para-mamaes-de-primeira-viagem/"
+                target="blank" class="btn">Ver mais</a>
         </div>
     </div>
 </div>
@@ -192,8 +207,8 @@
                 banho no bebê, já que muitos tem dúvidas sobre como fazer isso ou ficam inseguros na hora de realizar a
                 tarefa.
             </p>
-            <a href=" https://www.pampers.com.br/recem-nascido/cuidados/artigo/como-dar-banho-em-recemnascido " target="blank"
-                class="btn"> Ver Mais </a>
+            <a href=" https://www.pampers.com.br/recem-nascido/cuidados/artigo/como-dar-banho-em-recemnascido "
+                target="blank" class="btn"> Ver Mais </a>
         </div>
     </div>
 
@@ -204,7 +219,8 @@
             <p> Algumas brincadeiras, como balançar o bebê, colocar o bebê de barriga para cima, entre outras ajudam a
                 fortalecer os músculos das costas, do pescoço e da barriga, estimulando o bebê a sentar sozinho.
             </p>
-            <a href=" https://www.tuasaude.com/como-ajudar-o-bebe-a-sentar-mais-rapido/" target="blank" class="btn"> Ver Mais </a>
+            <a href=" https://www.tuasaude.com/como-ajudar-o-bebe-a-sentar-mais-rapido/" target="blank" class="btn"> Ver
+                Mais </a>
         </div>
     </div>
 
@@ -219,7 +235,8 @@
                 viagem.
 
             </p>
-            <a href="https://www.bepantol.com.br/bepantol-baby/preparativos-para-o-bebe/enxoval-do-bebe/?gad_source=1&gclid=CjwKCAjwufq2BhAmEiwAnZqw8izDxvdBnZq7i6g7LmIFDOtWmQKynh2fUK6DkoMtc-jCH4oW5PmnKhoCvxMQAvD_BwE" target="blank" class="btn"> Ver Mais </a>
+            <a href="https://www.bepantol.com.br/bepantol-baby/preparativos-para-o-bebe/enxoval-do-bebe/?gad_source=1&gclid=CjwKCAjwufq2BhAmEiwAnZqw8izDxvdBnZq7i6g7LmIFDOtWmQKynh2fUK6DkoMtc-jCH4oW5PmnKhoCvxMQAvD_BwE"
+                target="blank" class="btn"> Ver Mais </a>
         </div>
 
     </div>
@@ -232,7 +249,8 @@
             <h2 class="font-bold text-2xl text-white">Departamentos</h2>
             <a class="text-white text-xl md:text-base" href="blog.html">Blog</a>
             <a class="text-white text-xl md:text-base" href="brecho.html">Brechó</a>
-            <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo do Whatsapp</a>
+            <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo
+                do Whatsapp</a>
             <a class="text-white text-xl md:text-base" href="empresa.html">Site Makers</a>
         </div>
         <div class="flex flex-col text-center gap-4">
@@ -244,7 +262,9 @@
             <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
             <div class="flex items-center gap-3 md:gap-2">
                 <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
-                <a class="text-white text-xl md:text-base" href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11) 95373-6849</a>
+                <a class="text-white text-xl md:text-base"
+                    href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11)
+                    95373-6849</a>
             </div>
             <div class="flex items-center gap-3 md:gap-2">
                 <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
@@ -252,17 +272,18 @@
             </div>
             <div class="flex items-center gap-3 md:gap-2">
                 <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
-                <a class="text-white text-xl md:text-base" href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
+                <a class="text-white text-xl md:text-base"
+                    href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
             </div>
         </div>
         <div class="flex flex-col text-center items-center gap-4">
             <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
             <div class="flex flex-row gap-4">
-                <a href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <a href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">
                     <i
                         class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
                 </a>
-                <a href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">
+                <a href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                     <i
                         class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
                 </a>
@@ -280,32 +301,32 @@
 <!--FIM FOOTER-->
 
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
-    <script src="scripts/firebase-init.js"></script>
-    <script>
-        let botaoLogin = document.getElementById("btn-login");
-        let botaoLogout = document.getElementById("btn-logout");
-        let botaoLogin2 = document.getElementById("btn-login-2");
-        let botaoLogout2 = document.getElementById("btn-logout-2");
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="scripts/firebase-init.js"></script>
+<script>
+    let botaoLogin = document.getElementById("btn-login");
+    let botaoLogout = document.getElementById("btn-logout");
+    let botaoLogin2 = document.getElementById("btn-login-2");
+    let botaoLogout2 = document.getElementById("btn-logout-2");
 
-        firebase.auth().onAuthStateChanged(function (user) {
-            if (user) {
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
 
-                botaoLogin.style.display = "none";
-                botaoLogout.style.display = "block";
-                botaoLogin2.style.display = "none";
-                botaoLogout2.style.display = "block";
-            }
-        })
-
-        function logout() {
-            firebase.auth().signOut().then(() => {
-                window.location.href = "login.html"
-            }).catch(() => {
-                alert("Erro ao fazer logout!")
-            })
+            botaoLogin.style.display = "none";
+            botaoLogout.style.display = "block";
+            botaoLogin2.style.display = "none";
+            botaoLogout2.style.display = "block";
         }
-    </script>
+    })
+
+    function logout() {
+        firebase.auth().signOut().then(() => {
+            window.location.href = "login.html"
+        }).catch(() => {
+            alert("Erro ao fazer logout!")
+        })
+    }
+</script>
 <script src="script.js"></script>
 <script src="scripts/menu.js"></script>
 </body>

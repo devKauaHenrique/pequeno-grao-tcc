@@ -30,11 +30,7 @@
 
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
 
-
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="blog.js"></script>
+    <script src="scripts/blog.js"></script>
 
     <title> Cuidados</title>
     <style>
@@ -84,9 +80,8 @@
 
                             <!--INÍCIO MENU-->
                             <div class="dropdown">
-                                <button onclick="myFunction()" class="dropbtn">Pesquisa</button>
+                                <button onclick="myFunction()" class="dropbtn">Menu</button>
                                 <div id="pesquisa" class="dropdown-content">
-                                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
                                     <a href="amamentacao.html"> Amamentação </a>
                                     <a href="dicas.html">Dicas</a>
                                     <a href="cuidados.html">Cuidados</a>
@@ -111,8 +106,18 @@
                                 <a href="brecho.html" class="">Brechó</a>
                             </li>
                         </ul>
-                        <a href="#"
-                            class="px-6 py-1 rounded-lg border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+                        <a href="login.html">
+                            <button
+                                class="px-6 py-1 rounded-lg border text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                                id="btn-login">
+                                Login
+                            </button>
+                            <button
+                                class="px-6 py-1 rounded-lg border hidden text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                                id="btn-logout" onclick="logout()">
+                                Sair
+                            </button>
+                        </a>
                     </div>
 
 
@@ -136,8 +141,18 @@
                 <a href="index.html" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
                 <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
                 <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
-                <a href="#"
-                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+                <a href="login.html">
+                    <button
+                        class="px-6 py-1 rounded-lg border text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                        id="btn-login">
+                        Login
+                    </button>
+                    <button
+                        class="px-6 py-1 rounded-lg border hidden text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                        id="btn-logout" onclick="logout()">
+                        Sair
+                    </button>
+                </a>
             </div>
             <!--FIM HEADER MOBILE-->
 
@@ -231,20 +246,24 @@
     <div class="flex flex-col md:flex-row gap-12">
         <div class="flex flex-col text-center gap-4">
             <h2 class="font-bold text-2xl text-white">Departamentos</h2>
-            <a class="text-white text-xl md:text-base" href="#">Blog</a>
-            <a class="text-white text-xl md:text-base" href="#">Brechó</a>
-            <a class="text-white text-xl md:text-base" href="#">Grupo do Whatsapp</a>
+            <a class="text-white text-xl md:text-base" href="blog.html">Blog</a>
+            <a class="text-white text-xl md:text-base" href="brecho.html">Brechó</a>
+            <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo
+                do Whatsapp</a>
+            <a class="text-white text-xl md:text-base" href="empresa.html">Site Makers</a>
         </div>
         <div class="flex flex-col text-center gap-4">
             <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>
-            <a class="text-white text-xl md:text-base" href="#">Ideias de nome para o seu bebê!</a>
-            <a class="text-white text-xl md:text-base" href="#">Dicas de alimentação na gravidez!</a>
+            <a class="text-white text-xl md:text-base" href="blog.html">Ideias de nome para o seu bebê!</a>
+            <a class="text-white text-xl md:text-base" href="blog.html">Dicas de alimentação na gravidez!</a>
         </div>
         <div class="flex flex-col items-center text-center gap-4">
             <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
             <div class="flex items-center gap-3 md:gap-2">
                 <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
-                <a class="text-white text-xl md:text-base" href="#">(11) 95373-6849</a>
+                <a class="text-white text-xl md:text-base"
+                    href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11)
+                    95373-6849</a>
             </div>
             <div class="flex items-center gap-3 md:gap-2">
                 <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
@@ -252,26 +271,26 @@
             </div>
             <div class="flex items-center gap-3 md:gap-2">
                 <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
-                <a class="text-white text-xl md:text-base" href="#">@pequeno_grao</a>
+                <a class="text-white text-xl md:text-base"
+                    href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
             </div>
-        </div>
-        <div class="flex flex-col text-center items-center gap-4">
-            <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
-            <div class="flex flex-row gap-4">
-                <a href="#">
-                    <i
-                        class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
-                </a>
-                <a href="#">
-                    <i
-                        class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
-                </a>
-                <a href="#">
-                    <i
-                        class="fa-brands fa-facebook text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
-                </a>
+            <div class="flex flex-col text-center items-center gap-4">
+                <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
+                <div class="flex flex-row gap-4">
+                    <a href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">
+                        <i
+                            class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <i
+                            class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                    <a href="#">
+                        <i
+                            class="fa-brands fa-facebook text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                </div>
             </div>
-        </div>
     </div>
 </footer>
 <footer class="bg-salmao-escuro w-full flex justify-center items-center py-3">

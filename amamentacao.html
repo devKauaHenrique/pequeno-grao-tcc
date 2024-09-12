@@ -30,11 +30,7 @@
 
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
 
-
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="blog.js"></script>
+    <script src="scripts/blog.js"></script>
 
     <title>Amamentação</title>
     <style>
@@ -84,9 +80,8 @@
 
                             <!--INÍCIO MENU-->
                             <div class="dropdown">
-                                <button onclick="myFunction()" class="dropbtn">Pesquisa</button>
+                                <button onclick="myFunction()" class="dropbtn">Menu</button>
                                 <div id="pesquisa" class="dropdown-content">
-                                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
                                     <a href="amamentacao.html"> Amamentação </a>
                                     <a href="dicas.html">Dicas</a>
                                     <a href="cuidados.html">Cuidados</a>
@@ -111,8 +106,18 @@
                                 <a href="brecho.html" class="">Brechó</a>
                             </li>
                         </ul>
-                        <a href="#"
-                            class="px-6 py-1 rounded-lg border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+                        <a href="login.html">
+                            <button
+                                class="px-6 py-1 rounded-lg border text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                                id="btn-login">
+                                Login
+                            </button>
+                            <button
+                                class="px-6 py-1 rounded-lg border hidden text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                                id="btn-logout" onclick="logout()">
+                                Sair
+                            </button>
+                        </a>
                     </div>
 
 
@@ -136,8 +141,18 @@
                 <a href="index.html" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
                 <a href="#" id="link" class="text-white block px-3 py-1">Blog</a>
                 <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
-                <a href="#"
-                    class="px-6 py-1 rounded-lg text-white border border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out">Login</a>
+                <a href="login.html">
+                    <button
+                        class="px-6 py-1 rounded-lg border text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                        id="btn-login">
+                        Login
+                    </button>
+                    <button
+                        class="px-6 py-1 rounded-lg border hidden text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out"
+                        id="btn-logout" onclick="logout()">
+                        Sair
+                    </button>
+                </a>
             </div>
             <!--FIM HEADER MOBILE-->
 
@@ -156,7 +171,8 @@
                 durante os seis primeiros meses de vida. Após o primeiro semestre, o Ministério da Saúde recomenda que o
                 leite materno continue sendo oferecido juntamente com alimentos complementares.
             </p>
-            <a href="https://pessoalsaude.com.br/qual-o-tempo-ideal-de-amamentacao/" target="blank" class="btn"> Ver Mais</a>
+            <a href="https://pessoalsaude.com.br/qual-o-tempo-ideal-de-amamentacao/" target="blank" class="btn"> Ver
+                Mais</a>
         </div>
     </div>
 
@@ -167,8 +183,8 @@
             <p> O artigo 396 da CLT prevê que após o retorno da licença maternidade, que atualmente é de 120 dias, a
                 mulher terá direito, durante a jornada de trabalho, a dois descansos especiais de meia hora cada um com
                 a finalidade de amamentar o bebê. </p>
-            <a href="https://www.trt13.jus.br/informe-se/noticias/agosto-dourado-mulheres-que-amamentam-possuem-direitos-garantidos-pela-clt#:~:text=O%20artigo%20396%20da%20CLT,inclusive%20se%20advindo%20de%20ado%C3%A7%C3%A3o." target="blank"
-                class="btn"> Ver Mais</a>
+            <a href="https://www.trt13.jus.br/informe-se/noticias/agosto-dourado-mulheres-que-amamentam-possuem-direitos-garantidos-pela-clt#:~:text=O%20artigo%20396%20da%20CLT,inclusive%20se%20advindo%20de%20ado%C3%A7%C3%A3o."
+                target="blank" class="btn"> Ver Mais</a>
         </div>
     </div>
 
@@ -182,8 +198,8 @@
                 e o cuidado pós-parto. Uma das preocupações comuns é o temido leite empedrado.
                 vamos responder algumas das dúvidas mais frequentes sobre o leite empedrado
             </p>
-            <a href="https://www.careplus.com.br/careplus-mais/saiba-tudo-sobre-o-ingurgitamento-mamario-popularmente-conhecido-como-leite-empedrado" target="blank"
-                class="btn">Ver mais</a>
+            <a href="https://www.careplus.com.br/careplus-mais/saiba-tudo-sobre-o-ingurgitamento-mamario-popularmente-conhecido-como-leite-empedrado"
+                target="blank" class="btn">Ver mais</a>
         </div>
     </div>
 </div>
@@ -198,8 +214,8 @@
                 materno (aleitamento materno exclusivo), ou seja, sem necessidade de sucos, chás, água e outros
                 alimentos. Quanto mais tempo o bebê mamar no peito da mãe, melhor para ele e para a mãe. .
             </p>
-            <a href="https://www.sustagenkids.com.br/receitas/?gad_source=1&gclid=Cj0KCQjw8--2BhCHARIsAF_w1gxcR3knZOAkE088F3N7m5uNj7cbraylUap0p-l7rbKKZPPwkjKkAIcaAhFkEALw_wcB" target="blank"
-                class="btn"> Ver Mais </a>
+            <a href="https://www.sustagenkids.com.br/receitas/?gad_source=1&gclid=Cj0KCQjw8--2BhCHARIsAF_w1gxcR3knZOAkE088F3N7m5uNj7cbraylUap0p-l7rbKKZPPwkjKkAIcaAhFkEALw_wcB"
+                target="blank" class="btn"> Ver Mais </a>
         </div>
     </div>
 
@@ -212,8 +228,8 @@
                 materno for oferecido diretamente ao seio. Certo?
                 Porém, quando se trata de bebês prematuros, o cenário pode ser mais desafiador.
             </p>
-            <a href="https://www.prematuridade.com/nutricao?gad_source=1&gclid=Cj0KCQjw8--2BhCHARIsAF_w1gwBTGWug9jw9OWSCeBFqN3yq_z70dBS9EmJHREq5ct226Q2Iv53OWoaAiCPEALw_wcB" target="blank"
-                class="btn"> Ver Mais </a>
+            <a href="https://www.prematuridade.com/nutricao?gad_source=1&gclid=Cj0KCQjw8--2BhCHARIsAF_w1gwBTGWug9jw9OWSCeBFqN3yq_z70dBS9EmJHREq5ct226Q2Iv53OWoaAiCPEALw_wcB"
+                target="blank" class="btn"> Ver Mais </a>
         </div>
     </div>
 
@@ -226,8 +242,8 @@
                 não significa que, sem que a mulher saiba, não sejam cometidos alguns erros. O mais importante é estar
                 informada para que dê tudo certo.
             </p>
-            <a href="https://www.cuf.pt/mais-saude/amamentacao-tudo-o-que-precisa-de-saber#:~:text=A%20prolactina%20atua%20na%20mama,leite%20para%20a%20mamada%20seguinte." target="blank"
-                class="btn"> Ver Mais </a>
+            <a href="https://www.cuf.pt/mais-saude/amamentacao-tudo-o-que-precisa-de-saber#:~:text=A%20prolactina%20atua%20na%20mama,leite%20para%20a%20mamada%20seguinte."
+                target="blank" class="btn"> Ver Mais </a>
         </div>
 
     </div>
@@ -238,20 +254,24 @@
     <div class="flex flex-col md:flex-row gap-12">
         <div class="flex flex-col text-center gap-4">
             <h2 class="font-bold text-2xl text-white">Departamentos</h2>
-            <a class="text-white text-xl md:text-base" href="#">Blog</a>
-            <a class="text-white text-xl md:text-base" href="#">Brechó</a>
-            <a class="text-white text-xl md:text-base" href="#">Grupo do Whatsapp</a>
+            <a class="text-white text-xl md:text-base" href="blog.html">Blog</a>
+            <a class="text-white text-xl md:text-base" href="brecho.html">Brechó</a>
+            <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo
+                do Whatsapp</a>
+            <a class="text-white text-xl md:text-base" href="empresa.html">Site Makers</a>
         </div>
         <div class="flex flex-col text-center gap-4">
             <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>
-            <a class="text-white text-xl md:text-base" href="#">Ideias de nome para o seu bebê!</a>
-            <a class="text-white text-xl md:text-base" href="#">Dicas de alimentação na gravidez!</a>
+            <a class="text-white text-xl md:text-base" href="blog.html">Ideias de nome para o seu bebê!</a>
+            <a class="text-white text-xl md:text-base" href="blog.html">Dicas de alimentação na gravidez!</a>
         </div>
         <div class="flex flex-col items-center text-center gap-4">
             <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
             <div class="flex items-center gap-3 md:gap-2">
                 <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
-                <a class="text-white text-xl md:text-base" href="#">(11) 95373-6849</a>
+                <a class="text-white text-xl md:text-base"
+                    href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11)
+                    95373-6849</a>
             </div>
             <div class="flex items-center gap-3 md:gap-2">
                 <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
@@ -259,17 +279,18 @@
             </div>
             <div class="flex items-center gap-3 md:gap-2">
                 <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
-                <a class="text-white text-xl md:text-base" href="#">@pequeno_grao</a>
+                <a class="text-white text-xl md:text-base"
+                    href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
             </div>
         </div>
         <div class="flex flex-col text-center items-center gap-4">
             <h2 class="font-bold text-2xl text-white">Redes sociais</h2>
             <div class="flex flex-row gap-4">
-                <a href="#">
+                <a href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">
                     <i
                         class="fa-brands fa-instagram text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                     <i
                         class="fa-brands fa-whatsapp text-white text-3xl md:text-xl bg-black hover:bg-salmao-escuro transition duration-500 ease-in-out rounded-full px-3 py-2"></i>
                 </a>
@@ -287,35 +308,33 @@
 <!--FIM FOOTER-->
 
 <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
-    <script src="scripts/firebase-init.js"></script>
-    <script>
-        let botaoLogin = document.getElementById("btn-login");
-        let botaoLogout = document.getElementById("btn-logout");
-        let botaoLogin2 = document.getElementById("btn-login-2");
-        let botaoLogout2 = document.getElementById("btn-logout-2");
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="scripts/firebase-init.js"></script>
+<script>
+    let botaoLogin = document.getElementById("btn-login");
+    let botaoLogout = document.getElementById("btn-logout");
+    let botaoLogin2 = document.getElementById("btn-login-2");
+    let botaoLogout2 = document.getElementById("btn-logout-2");
 
-        firebase.auth().onAuthStateChanged(function (user) {
-            if (user) {
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
 
-                botaoLogin.style.display = "none";
-                botaoLogout.style.display = "block";
-                botaoLogin2.style.display = "none";
-                botaoLogout2.style.display = "block";
-            }
-        })
-
-        function logout() {
-            firebase.auth().signOut().then(() => {
-                window.location.href = "login.html"
-            }).catch(() => {
-                alert("Erro ao fazer logout!")
-            })
+            botaoLogin.style.display = "none";
+            botaoLogout.style.display = "block";
+            botaoLogin2.style.display = "none";
+            botaoLogout2.style.display = "block";
         }
-    </script>
-<script src="script.js"></script>
+    })
+
+    function logout() {
+        firebase.auth().signOut().then(() => {
+            window.location.href = "login.html"
+        }).catch(() => {
+            alert("Erro ao fazer logout!")
+        })
+    }
+</script>
 <script src="scripts/menu.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

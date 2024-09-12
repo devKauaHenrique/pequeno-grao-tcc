@@ -44,6 +44,10 @@ function onChangeConfirmPassword(){
     toggleRegisterButtonDisable()
 }
 
+function login(){
+    window.location.href = "login.html"
+}
+
 function register(){
     const email = form.email().value;
     const password = form.password().value;
