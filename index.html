@@ -85,23 +85,28 @@
 
             <!--INÍCIO HEADER MOBILE-->
             <div id="menu"
-                class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
-                <a href="#" id="link" class="text-white block px-3 mt-1 py-1">Início</a>
-                <a href="blog.html" id="link" class="text-white block px-3 py-1">Blog</a>
-                <a href="brecho.html" id="link" class="text-white block px-3 mb-2 py-1">Brechó</a>
-                <a href="login.html">
-                    <button
-                        class="px-6 py-1 rounded-lg border text-white border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out w-full"
-                        id="btn-login-2">
-                        Login
-                    </button>
-                    <button
-                        class="px-6 py-1 rounded-lg text-white border hidden border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out w-full"
-                        id="btn-logout-2" onclick="logout()">
-                        Sair
-                    </button>
-                </a>
-            </div>
+    class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
+    
+    <!-- Div para agrupar os links e botões -->
+    <div id="menu-content">
+        <a href="index.html" class="text-white block px-3 mt-1 py-1">Início</a>
+        <a href="blog.html" class="text-white block px-3 py-1">Blog</a>
+        <a href="brecho.html" class="text-white block px-3 mb-2 py-1">Brechó</a>
+        <a href="login.html">
+            <button
+                class="px-6 py-1 rounded-lg border text-white border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out w-full"
+                id="btn-login-2">
+                Login
+                </button>
+                <button
+                    class="px-6 py-1 rounded-lg text-white border hidden border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out w-full"
+                    id="btn-logout-2" onclick="logout()">
+                    Sair
+                </button>
+        </a>
+    </div>
+    
+</div>
             <!--FIM HEADER MOBILE-->
 
         </nav>
@@ -147,12 +152,12 @@
                 <p class="max-w-md md:max-w-xl">Seja muito bem-vinda ao Pequeno Grão, um espaço dedicado a pais e mães
                     de primeira viagem que buscam informações, apoio e inspiração para essa jornada incrível que é a
                     maternidade e a paternidade.</p>
-                <p class="max-w-md md:max-w-xl">Nosso objetivo é oferecer conteúdos confiáveis e e experiências
-                    compartilhadas para tornar essafase mais tranquila e cheia de amor.</p>
+                <p class="max-w-md md:max-w-xl">Nosso objetivo é oferecer conteúdos confiáveis e experiências
+                    compartilhadas para tornar essa fase mais tranquila e cheia de amor.</p>
                 <p class="max-w-md md:max-w-xl">A pequeno grão surgiu com a ideia de proporcionar a eles um espaço
                     confortável e seguro para se prepararem ao momento tão especial que é a chegada de um bebê!</p>
                 <p class="max-w-md md:max-w-xl">Oferecemos muitas informações confiáveis, dicas importantes e práticas,
-                    uma comunidade de apoiomuito acolhedora e muita inspiração para os papais!</p>
+                    uma comunidade de apoio muito acolhedora e muita inspiração para os papais!</p>
             </div>
             <div>
                 <img src="assets/arte-canva.png" alt="Arte da Mãe">
@@ -167,11 +172,11 @@
         <div class="mt-4 lg:mt- px-6 flex flex-col lg:flex-row items-center">
             <div class="text-center lg:text-lg flex flex-col gap-4 lg:mr-32">
                 <p class="max-w-md md:max-w-xl"> <strong>Missão:</strong> Nossa missão é ser um guia confiável e
-                    acolhedor para pais e mães de primeira viagem,fornecendo informações, apoio e inspiração paratornar
-                    a jornada da maternidade e paternidade maistranquila e gratificante. Queremos capacitar as famílias
+                    acolhedor para pais e mães de primeira viagem, fornecendo informações, apoio e inspiração para tornar
+                    a jornada da maternidade e paternidade mais tranquila e gratificante. Queremos capacitar as famílias
                     com o conhecimento e a confiança necessária para cuidar de seus filhos com amor e segurança! </p>
                 <p class="max-w-md md:max-w-xl"><strong>Visão:</strong> Nossa visão é criar uma comunidade online onde
-                    pais e mães de primeira viagem possamencontrar tudo o que precisam para criar seus filhos de maneira
+                    pais e mães de primeira viagem possam encontrar tudo o que precisam para criar seus filhos de maneira
                     saudável e feliz.</p>
                 <p class="max-w-md md:max-w-xl"><strong>Valores:</strong> A pequeno grão busca trabalhar com Empatia,
                     Confiança, Inovação e Inspiração.</p>
@@ -243,24 +248,38 @@
     <!--FIM SEÇÃO SERVIÇOS-->
 
     <!--INÍCIO SEÇÃO FEEDBACK-->
-    <section class="w-full h-full bg-white flex flex-col items-center py-12">
-        <h1 class="text-rosa-principal text-center text-3xl lg:text-4xl font-bold">Queremos o seu feedback</h1>
+    <section class="w-full h-full bg-white flex flex-col items-center py-4"></section>
 
-        <div class="bg-rosa-principal rounded-md h-full max-w-80 lg:w-2/4 mt-8 mb-4 flex flex-col px-6 py-6">
+    <h1 class="text-rosa-principal text-center text-3xl lg:text-4xl font-bold">Queremos o seu feedback</h1>
+
+    <form class="w-full flex justify-center items-center" action="https://formsubmit.co/kauasousa2810@gmail.com" method="POST">
+
+        <div class="bg-rosa-principal rounded-md h-full max-w-80 lg:w-2/4 mt-8 mb-8 flex flex-col px-6 py-6">
             <label class="text-white font-semibold text-2xl" for="nome">Nome:</label>
+
             <input class="rounded-md px-4 py-2 text-xl mt-2 outline-none" type="text" required
-                placeholder="Digite seu nome" id="nome">
+                placeholder="Digite seu nome" id="nome" name="nome">
 
             <label class="text-white font-semibold text-2xl mt-4" for="email">Email:</label>
+
             <input class="rounded-md px-4 py-2 text-xl mt-2 outline-none" type="text" required
-                placeholder="Digite seu email" id="email">
+                placeholder="Digite seu email" id="email" name="email">
 
             <label class="text-white font-semibold text-2xl mt-4" for="mensagem">Mensagem:</label>
+
             <textarea class="rounded-md px-4 py-2 text-xl mt-2 outline-none" required placeholder="Digite sua mensagem"
                 name="mensagem" id="mensagem"></textarea>
 
-            <button class="bg-white text-rosa-principal font-bold text-xl mt-6 rounded-md py-2">Enviar</button>
+            <button type="submit"
+                class="bg-white text-rosa-principal font-bold text-xl mt-6 rounded-md py-2">Enviar</button>
+
+            <input type="hidden" name="_subject" value="Novo Contato-!">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+
         </div>
+    </form>
+
     </section>
     <!--FIM SEÇÃO FEEDBACK-->
 

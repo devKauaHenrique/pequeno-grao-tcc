@@ -60,7 +60,7 @@ function addToCart(name, price) {
             text: "Esse item já existe no carrinho",
             duration: 5000,
             close: true,
-            gravity: "top", // `top` or `bottom`
+            gravity: "bottom", // `top` or `bottom`
             position: "left", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
@@ -81,7 +81,7 @@ function addToCart(name, price) {
             text: "Adicionado no carrinho",
             duration: 5000,
             close: true,
-            gravity: "top", // `top` or `bottom`
+            gravity: "bottom", // `top` or `bottom`
             position: "left", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
@@ -143,7 +143,7 @@ cartItemsContainer.addEventListener("click", function (event) {
             text: "Item removido",
             duration: 5000,
             close: true,
-            gravity: "top", // `top` or `bottom`
+            gravity: "bottom", // `top` or `bottom`
             position: "left", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
