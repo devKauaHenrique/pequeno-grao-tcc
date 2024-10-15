@@ -1,6 +1,7 @@
 const btn = document.getElementById("btn-menu");
 const menu = document.getElementById("menu");
-const menuContent = document.getElementById("menu-content"); // A nova div interna com os itens do menu
+const menuScroll = document.getElementById("ativo");
+const menuContent = document.getElementById("menu-content"); 
 
 // Função para fechar o menu
 const closeMenu = () => {
@@ -31,3 +32,14 @@ menu.addEventListener("click", (event) => {
 menuContent.addEventListener("click", (event) => {
     event.stopPropagation(); // Garante que cliques nos itens do menu-content não fechem o menu
 });
+
+function activeScroll(){
+    if(window.scrollY > 0){
+        menuScroll.classList.add("scrolled");
+    }
+    else{
+        menuScroll.classList.remove("scrolled")
+    }
+}
+
+window.addEventListener('scroll', activeScroll);

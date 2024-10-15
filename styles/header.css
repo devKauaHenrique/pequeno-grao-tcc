@@ -41,3 +41,7 @@ a#link::before{
 a#link:hover::before{
     scale: 1;
 }
+
+#ativo.scrolled{
+    background-color: black;
+}

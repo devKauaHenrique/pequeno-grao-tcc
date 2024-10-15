@@ -33,35 +33,6 @@
     <script src="scripts/blog.js"></script>
 
     <title>Blog</title>
-    <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .main-content {
-            flex: 1;
-        }
-
-        footer {
-            background-color: #D4AA78;
-            /* Ajuste conforme necessário */
-            color: white;
-            text-align: center;
-            padding: 12px 8px;
-        }
-
-        .footer-bottom {
-            background-color: #18d828;
-            /* Ajuste conforme necessário */
-            color: white;
-            text-align: center;
-            padding: 3px;
-        }
-    </style>
 </head>
 
 <body class="font-poppins overflow-x-hidden">
@@ -137,30 +108,30 @@
 
             <!--INÍCIO HEADER MOBILE-->
             <div id="menu"
-    class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
-    
-    <!-- Div para agrupar os links e botões -->
-    <div id="menu-content">
-        <a href="index.html" class="text-white block px-3 mt-1 py-1">Início</a>
-        <a href="blog.html" class="text-white block px-3 py-1">Blog</a>
-        <a href="brecho.html" class="text-white block px-3 mb-2 py-1">Brechó</a>
-        <div>
-            <a href="login.html">
-                <button
-                    class="px-6 py-1 rounded-lg border text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out w-full"
-                    id="btn-login-2">
-                    Login
-                </button>
-                <button
-                    class="px-6 py-1 rounded-lg text-white border hidden border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out w-full"
-                    id="btn-logout-2" onclick="logout()">
-                    Sair
-                </button>
-            </a>
-        </div>
-    </div>
-    
-</div>
+                class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
+
+                <!-- Div para agrupar os links e botões -->
+                <div id="menu-content">
+                    <a href="index.html" class="text-white block px-3 mt-1 py-1">Início</a>
+                    <a href="blog.html" class="text-white block px-3 py-1">Blog</a>
+                    <a href="brecho.html" class="text-white block px-3 mb-2 py-1">Brechó</a>
+                    <div>
+                        <a href="login.html">
+                            <button
+                                class="px-6 py-1 rounded-lg border text-white border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out w-full"
+                                id="btn-login-2">
+                                Login
+                            </button>
+                            <button
+                                class="px-6 py-1 rounded-lg text-white border hidden border-white hover:border-salmao-escuro hover:bg-salmao-escuro transition duration-700 ease-in-out w-full"
+                                id="btn-logout-2" onclick="logout()">
+                                Sair
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
             <!--FIM HEADER MOBILE-->
 
         </nav>
@@ -170,272 +141,228 @@
         <section class="featured">
             <div class="featured-container">
                 <div class="post-thumb">
-                    <img src="imagens/recemNascido.jpg" alt="">
+                    <img src="imagens/recemNascido.jpg" alt="Cuidados essenciais com recém-nascidos">
                 </div>
 
-                <!--categorias do post-->
                 <div class="post-info">
-                    <!-- Img/Escrita Post -->
                     <h2 class="post-title">
                         <a
                             href="https://www.pampers.com.br/recem-nascido/dicas/artigo/conselhos-essenciais-de-cuidados-com-o-bebe">
-                            Cuidados essenciais com recém-nascidos </a>
+                            Cuidados essenciais com recém-nascidos
+                        </a>
                     </h2>
-                    <p class="post-body"> Para cuidar do recém-nascido em casa, os pais
-                    <p> precisam dedicar muito tempo ao bebê, pois ele é muito pequenino </p>
-                    e frágil e precisa de muita atenção.Os pais devem, por isso,
-                    <p> ter alguns cuidados básicos para manter o conforto do recém-nascido </p>
-                    e garantir que cresce forte e saudável</p>
-
-                    <div class="category-btn"> <a href="dicas.html">Dicas</a></div>
-
-
+                    <p class="post-body">
+                        Para cuidar do recém-nascido em casa, os pais precisam dedicar muito tempo ao bebê, pois ele é
+                        muito pequenino e frágil e precisa de muita atenção. Os pais devem, por isso, ter alguns
+                        cuidados básicos para manter o conforto do recém-nascido e garantir que cresce forte e saudável.
+                    </p>
+                    <div class="category-btn">
+                        <a href="dicas.html">Dicas</a>
+                    </div>
                     <div class="post-profile">
                         <div class="post-profile-img">
-                            <img src="imagens/pampers.jpg" alt="">
+                            <img src="imagens/pampers.jpg" alt="Pampers">
                         </div>
-
                         <div class="post-profile-info">
-                            <h5> Pampers</h5>
-                            <small> 08 de Março, 2023</small>
+                            <h5>Pampers</h5>
+                            <small>08 de Março, 2023</small>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!-- Post -->
         <section class="post">
             <div class="post-container container">
+                <!-- Post 1 -->
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/NomesDeBb.jpg">
+                        <img src="assets/NomesDeBb.jpg" alt="Nomes de Bebê">
                     </div>
-
-                    <!-- 1 POST-->
                     <div class="post-info">
-                        <h2 class="post-title"> <a
+                        <h2 class="post-title">
+                            <a
                                 href="https://www.dentrodahistoria.com.br/blog/dicas/30-nomes-femininos-mais-populares-para-bebes-em-2024/">
-                                30 nomes femininos mais populares para bebês em 2024</a></h2>
+                                30 nomes femininos mais populares para bebês em 2024
+                            </a>
+                        </h2>
                         <p class="post-body">
-                            Em meio à felicidade que envolve a chegada de um novo membro à família
-                            , há uma tarefa particularmente especial que nos enche de alegria:
-                            escolher o nome perfeito para a pequena menina que está por vir.
+                            Em meio à felicidade que envolve a chegada de um novo membro à família, há uma tarefa
+                            particularmente especial que nos enche de alegria: escolher o nome perfeito para a pequena
+                            menina que está por vir.
                         </p>
-                        <!--categorias e link do post-->
-                        <div class="category-btn"> <a href="dicas.html"> Dicas </a> </div>
-
-                        <!-- Img/Autor Post -->
+                        <div class="category-btn">
+                            <a href="dicas.html">Dicas</a>
+                        </div>
                         <div class="post-profile">
                             <div class="post-profile-img">
-                                <img src="assets/perfil.jpg" alt="">
+                                <img src="assets/perfil.jpg" alt="Autor: Dentro da História">
                             </div>
-
-                            <!-- Data do Post -->
                             <div class="post-profile-info">
                                 <h5>Dentro da História</h5>
-                                <small>3 de Abril, 2024 </small>
+                                <small>3 de Abril, 2024</small>
                             </div>
-
                         </div>
                     </div>
                 </article>
-            </div>
 
-            <!--Post 2 -->
-            <div class="post-container container">
+                <!-- Post 2 -->
                 <article class="post">
-                    <div class="post-thumb">
-                        <img src="assets/autoestima.jpg">
+                    <div id="post-2" class="post-thumb">
+                        <img src="assets/autoestima.jpg" alt="Autoestima">
                     </div>
-
-                    <!-- post-->
-                    <div class="post-info">
-                        <h2 class="post-title"> <a
+                    <div id="post-2-body" class="post-info">
+                        <h2 class="post-title">
+                            <a
                                 href="https://zenklub.com.br/blog/palavra-de-especialista/o-impacto-das-relacoes-familiares-na-autoestima/">
-                                O impacto das relações familiares na autoestima</a></h2>
+                                Descubra os impactos das relações familiares na autoestima.
+                            </a>
+                        </h2>
                         <p class="post-body">
                             Desde a infância, a forma como somos tratados pelos nossos pares, acolhidos, elogiados ou
-                            julgados, servem como referência para a construção da
-                            nossa identidade, da forma como nos enxergamos.
+                            julgados, servem como referência para a construção da nossa identidade, da forma como nos
+                            enxergamos.
                         </p>
-                        <!--categorias e link do post-->
-                        <div class="category-btn"> <a href="psicologia.html"> Psicologia </a> </div>
-
-                        <!-- Img/Autor Post -->
+                        <div class="category-btn">
+                            <a href="psicologia.html">Psicologia</a>
+                        </div>
                         <div class="post-profile">
                             <div class="post-profile-img">
-                                <img src="assets/perfil.jpg" alt="">
+                                <img src="assets/perfil.jpg" alt="Autor: Zenklub">
                             </div>
-
-                            <!-- Data do Post -->
                             <div class="post-profile-info">
-                                <h5> Zenklub </h5>
-                                <small> 6 de Fevereiro, 2024 </small>
+                                <h5>Zenklub</h5>
+                                <small>6 de Fevereiro, 2024</small>
                             </div>
                         </div>
                     </div>
                 </article>
-            </div>
 
-            <!--Post 3-->
-            <div class="post-container container">
+                <!-- Post 3 -->
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/amamentacao.jpg">
+                        <img src="assets/amamentacao.jpg" alt="Amamentação">
                     </div>
-
-                    <!-- post-->
                     <div class="post-info">
-                        <h2 class="post-title"> <a
+                        <h2 class="post-title">
+                            <a
                                 href="https://www.saude.df.gov.br/web/guest/w/principais-cuidados-durante-o-per%C3%ADodo-de-amamenta%C3%A7%C3%A3o">
-                                Principais cuidados durante o período de amamentação do Bebê</a></h2>
+                                Principais cuidados durante o período de amamentação do Bebê
+                            </a>
+                        </h2>
                         <p class="post-body">
                             Saiba o que é permitido fazer, consumir ou usar e o que deve ser evitado durante o
-                            aleitamento materno.
-                            Agosto Dourado marca mês de conscientização ao aleitamento materno.</p>
-
-                        <!--categorias e link do post-->
-                        <div class="category-btn"> <a href="amamentacao.html"> Amamentação </a> </div>
-
-                        <!-- Img/Autor Post -->
+                            aleitamento materno. Agosto Dourado marca mês de conscientização ao aleitamento materno.
+                        </p>
+                        <div class="category-btn">
+                            <a href="amamentacao.html">Amamentação</a>
+                        </div>
                         <div class="post-profile">
                             <div class="post-profile-img">
-
-                                <img src="assets/michelleHorovits.jpeg" alt="">
+                                <img src="assets/michelleHorovits.jpeg" alt="Autor: Michelle Horovits">
                             </div>
-
                             <div class="post-profile-info">
-                                <h5> Michelle Horovits </h5>
+                                <h5>Michelle Horovits</h5>
                                 <small>04 de Agosto, 2023</small>
                             </div>
-
                         </div>
                     </div>
                 </article>
             </div>
         </section>
-
 
         <!--Post 4-->
         <section class="post">
             <div class="post-container container">
+                <!-- Post 1 -->
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/paternidade.jpg">
+                        <img src="assets/paternidade.jpg" alt="Paternidade ativa">
                     </div>
-
-                    <!--categorias do post-->
                     <div class="post-info">
-                        <h2 class="post-title"> <a
-                                href="https://www.pge.ms.gov.br/paternidade-ativa-um-pai-presente-transforma-o-futuro/">
-                                Paternidade ativa: Um pai presente transforma o futuro </a></h2>
+                        <h2 class="post-title">
+                            <a href="https://www.pge.ms.gov.br/paternidade-ativa-um-pai-presente-transforma-o-futuro/">
+                                Paternidade ativa: Um pai presente transforma o futuro
+                            </a>
+                        </h2>
                         <p class="post-body">
-                            Para muitos, a paternidade é desafiadora e até difícil; já outros avaliam como uma fase
-                            transformadora que traz
-                            muito amadurecimento. Contudo, o que ninguém discorda é que ser PAI – no sentido
-                            amplo da palavra e das responsabilidade.
+                            Para muitos, a paternidade é desafiadora e até difícil; já outros avaliam como uma fase transformadora que traz muito amadurecimento. Contudo, o que ninguém discorda é que ser PAI – no sentido amplo da palavra e das responsabilidades.
                         </p>
-
-                        <!--categorias e link do post-->
-                        <div class="category-btn"> <a href="paternidade.html"> Paternidade </a> </div>
-
-                        <!-- Img/Escrita Post -->
+                        <div class="category-btn">
+                            <a href="paternidade.html">Paternidade</a>
+                        </div>
                         <div class="post-profile">
                             <div class="post-profile-img">
-                                <img src="assets/pgeMS.png" alt="">
+                                <img src="assets/pgeMS.png" alt="PGE-MS">
                             </div>
-
-                            <!-- Data do Post -->
                             <div class="post-profile-info">
                                 <h5>PGE-MS</h5>
                                 <small>06 de Agosto, 2021</small>
                             </div>
-
                         </div>
                     </div>
                 </article>
-            </div>
-
-            <!--Post 5-->
-            <div class="post-container container">
+        
+                <!-- Post 2 -->
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/deprePosParto.jpg">
+                        <img src="assets/deprePosParto.jpg" alt="Depressão Pós-Parto">
                     </div>
-
-                    <!--categorias do post-->
                     <div class="post-info">
-                        <h2 class="post-title"> <a href="https://julianacavalsan.com.br/">
-                                Será que é depressão Pós-Parto? E agora? O que fazer?</a></h2>
+                        <h2 class="post-title">
+                            <a href="https://julianacavalsan.com.br/">
+                                Será que é depressão Pós-Parto? E agora? O que fazer?
+                            </a>
+                        </h2>
                         <p class="post-body">
-                            Não é fácil reconhecer sintomas de depressão pós-parto nas mães pois há
-                            uma confusão entre o que é considerado normal para essa fase de vida e o que é realmente uma
-                            doença. Tirando o Fato do preconceito por
-                            ás vezes as mães não terem conexões com seus própris filhos.
+                            Não é fácil reconhecer sintomas de depressão pós-parto nas mães, pois há uma confusão entre o que é considerado normal para essa fase de vida e o que é realmente uma doença. Tirando o fato do preconceito, às vezes as mães não têm conexões com seus próprios filhos.
                         </p>
-
-                        <!--categorias e link do post-->
-                        <div class="category-btn"> <a href="psicologia.html"> Psicologia </a> </div>
-
-                        <!-- Img/Escrita Post -->
+                        <div class="category-btn">
+                            <a href="psicologia.html">Psicologia</a>
+                        </div>
                         <div class="post-profile">
                             <div class="post-profile-img">
-                                <img src="assets/draJu.jpg" alt="">
+                                <img src="assets/draJu.jpg" alt="Dra. Juliana Cavalsan">
                             </div>
-
-                            <!-- Data do Post -->
                             <div class="post-profile-info">
-                                <h5> Dra. Juliana Cavalsan </h5>
+                                <h5>Dra. Juliana Cavalsan</h5>
                                 <small>27 de Dezembro, 2022</small>
                             </div>
-
                         </div>
                     </div>
                 </article>
-            </div>
-
-
-            <!--Post 5-->
-            <div class="post-container container">
+        
+                <!-- Post 3 -->
                 <article class="post">
                     <div class="post-thumb">
-                        <img src="assets/piramideAlimentar.jpg">
+                        <img src="assets/piramideAlimentar.jpg" alt="Pirâmide Alimentar">
                     </div>
-
-                    <!--categorias do post-->
                     <div class="post-info">
-                        <h2 class="post-title"> <a
-                                href="https://www.hospitalinfantilsabara.org.br/alimentacao-infantil/">
-                                Alimentação infantil: Pirâmide alimentar correta e adequada</a> </h2>
+                        <h2 class="post-title">
+                            <a href="https://www.hospitalinfantilsabara.org.br/alimentacao-infantil/">
+                                Alimentação infantil: Pirâmide alimentar correta e adequada
+                            </a>
+                        </h2>
                         <p class="post-body">
-                            A pirâmide alimentar serve para mostrar, visualmente, quais tipos de alimentos devemos
-                            ingerir em maior ou menor quantidade.
-                            Na base, estão os alimentos que devem ser mais consumidos: os carboidratos. Depois, vêm os
-                            vegetais e frutas
+                            A pirâmide alimentar serve para mostrar, visualmente, quais tipos de alimentos devemos ingerir em maior ou menor quantidade. Na base, estão os alimentos que devem ser mais consumidos: os carboidratos. Depois, vêm os vegetais e frutas.
                         </p>
-
-                        <!--categorias e link do post-->
-                        <div class="category-btn"> <a href="alimentacao.html"> Alimentação</a> </div>
-
-                        <!-- Img/Escrita Post -->
+                        <div class="category-btn">
+                            <a href="alimentacao.html">Alimentação</a>
+                        </div>
                         <div class="post-profile">
                             <div class="post-profile-img">
-                                <img src="assets/hospitalSabara.jpeg" alt="">
+                                <img src="assets/hospitalSabara.jpeg" alt="Hospital Sabará">
                             </div>
-
-                            <!-- Data do Post -->
                             <div class="post-profile-info">
-                                <h5> Hospital Sabará</h5>
+                                <h5>Hospital Sabará</h5>
                                 <small>28 de Março, 2024</small>
                             </div>
-
                         </div>
                     </div>
                 </article>
             </div>
-        </section>
+        </section>        
 
     </div>
     <!--FIM SEÇÃO PRINCIPAL-->
@@ -449,7 +376,7 @@
                 <a class="text-white text-xl md:text-base" href="brecho.html">Brechó</a>
                 <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo
                     do Whatsapp</a>
-                <a class="text-white text-xl md:text-base" href="empresa.html">Site Makers</a>
+                <a class="text-white text-xl md:text-base" href="https://hope-echo.vercel.app/">Hope Echo</a>
             </div>
             <div class="flex flex-col text-center gap-4">
                 <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>

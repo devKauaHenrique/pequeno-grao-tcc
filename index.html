@@ -37,7 +37,7 @@
         <nav class="bg-custom-transparent">
 
             <!--INÍCIO HEADER DESKTOP-->
-            <div class="w-full px-6 md:pl-12">
+            <div id="ativo" class="w-full px-6 md:pl-12 fixed z-50">
                 <div class="flex items-center justify-between h-20">
                     <div class="flex items-center">
                         <a href="#" class="flex-shrink-0">
@@ -85,28 +85,28 @@
 
             <!--INÍCIO HEADER MOBILE-->
             <div id="menu"
-    class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
-    
-    <!-- Div para agrupar os links e botões -->
-    <div id="menu-content">
-        <a href="index.html" class="text-white block px-3 mt-1 py-1">Início</a>
-        <a href="blog.html" class="text-white block px-3 py-1">Blog</a>
-        <a href="brecho.html" class="text-white block px-3 mb-2 py-1">Brechó</a>
-        <a href="login.html">
-            <button
-                class="px-6 py-1 rounded-lg border text-white border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out w-full"
-                id="btn-login-2">
-                Login
-                </button>
-                <button
-                    class="px-6 py-1 rounded-lg text-white border hidden border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out w-full"
-                    id="btn-logout-2" onclick="logout()">
-                    Sair
-                </button>
-        </a>
-    </div>
-    
-</div>
+                class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
+
+                <!-- Div para agrupar os links e botões -->
+                <div id="menu-content">
+                    <a href="index.html" class="text-white block px-3 mt-1 py-1">Início</a>
+                    <a href="blog.html" class="text-white block px-3 py-1">Blog</a>
+                    <a href="brecho.html" class="text-white block px-3 mb-2 py-1">Brechó</a>
+                    <a href="login.html">
+                        <button
+                            class="px-6 py-1 rounded-lg border text-white border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out w-full"
+                            id="btn-login-2">
+                            Login
+                        </button>
+                        <button
+                            class="px-6 py-1 rounded-lg text-white border hidden border-white hover:border-rosa-principal hover:bg-rosa-principal transition duration-700 ease-in-out w-full"
+                            id="btn-logout-2" onclick="logout()">
+                            Sair
+                        </button>
+                    </a>
+                </div>
+
+            </div>
             <!--FIM HEADER MOBILE-->
 
         </nav>
@@ -127,7 +127,7 @@
             </div>
 
             <!--INÍCIO BOTÃO PAI-->
-            <div class="bottom-5 right-8 absolute z-50">
+            <div class="bottom-5 right-8 absolute z-40">
                 <a href="home-pai.html"
                     class="text-azul-principal bg-white rounded-lg px-3 py-1 flex items-center gap-2 font-semibold">
                     <i class="fa-solid fa-person text-2xl"></i>
@@ -172,11 +172,13 @@
         <div class="mt-4 lg:mt- px-6 flex flex-col lg:flex-row items-center">
             <div class="text-center lg:text-lg flex flex-col gap-4 lg:mr-32">
                 <p class="max-w-md md:max-w-xl"> <strong>Missão:</strong> Nossa missão é ser um guia confiável e
-                    acolhedor para pais e mães de primeira viagem, fornecendo informações, apoio e inspiração para tornar
+                    acolhedor para pais e mães de primeira viagem, fornecendo informações, apoio e inspiração para
+                    tornar
                     a jornada da maternidade e paternidade mais tranquila e gratificante. Queremos capacitar as famílias
                     com o conhecimento e a confiança necessária para cuidar de seus filhos com amor e segurança! </p>
                 <p class="max-w-md md:max-w-xl"><strong>Visão:</strong> Nossa visão é criar uma comunidade online onde
-                    pais e mães de primeira viagem possam encontrar tudo o que precisam para criar seus filhos de maneira
+                    pais e mães de primeira viagem possam encontrar tudo o que precisam para criar seus filhos de
+                    maneira
                     saudável e feliz.</p>
                 <p class="max-w-md md:max-w-xl"><strong>Valores:</strong> A pequeno grão busca trabalhar com Empatia,
                     Confiança, Inovação e Inspiração.</p>
@@ -252,7 +254,8 @@
 
     <h1 class="text-rosa-principal text-center text-3xl lg:text-4xl font-bold">Queremos o seu feedback</h1>
 
-    <form class="w-full flex justify-center items-center" action="https://formsubmit.co/kauasousa2810@gmail.com" method="POST">
+    <form class="w-full flex justify-center items-center" action="https://formsubmit.co/kauasousa2810@gmail.com"
+        method="POST">
 
         <div class="bg-rosa-principal rounded-md h-full max-w-80 lg:w-2/4 mt-8 mb-8 flex flex-col px-6 py-6">
             <label class="text-white font-semibold text-2xl" for="nome">Nome:</label>
@@ -292,7 +295,7 @@
                 <a class="text-white text-xl md:text-base" href="brecho.html">Brechó</a>
                 <a class="text-white text-xl md:text-base" href="https://chat.whatsapp.com/LEKEJoOFeHq2zWXNT31MRN">Grupo
                     do Whatsapp</a>
-                <a class="text-white text-xl md:text-base" href="empresa.html">Site Makers</a>
+                <a class="text-white text-xl md:text-base" href="https://hope-echo.vercel.app/">Hope Echo</a>
             </div>
             <div class="flex flex-col text-center gap-4">
                 <h2 class="font-bold text-2xl text-white">Blog Pequeno Grão</h2>

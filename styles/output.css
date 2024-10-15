@@ -695,6 +695,10 @@ video {
   z-index: 10;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -935,10 +939,6 @@ video {
   height: calc(100vh - 5rem);
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -973,10 +973,6 @@ video {
 
 .min-w-\[90\%\] {
   min-width: 90%;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
 }
 
 .max-w-40 {
@@ -1895,10 +1891,6 @@ video {
   border-radius: 0.25rem;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -2327,11 +2319,6 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .py-12 {
@@ -3046,11 +3033,6 @@ html{
   border-color: rgb(255 169 197 / var(--tw-border-opacity));
 }
 
-.hover\:border-salmao:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(212 170 120 / var(--tw-border-opacity));
-}
-
 .hover\:border-salmao-escuro:hover {
   --tw-border-opacity: 1;
   border-color: rgb(173 125 68 / var(--tw-border-opacity));
@@ -3074,11 +3056,6 @@ html{
 .hover\:bg-rosa-secundario:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(98 29 57 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-salmao:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 170 120 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-salmao-escuro:hover {
@@ -3108,11 +3085,6 @@ html{
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.hover\:text-salmao:hover {
-  --tw-text-opacity: 1;
-  color: rgb(212 170 120 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-2xl:hover {
@@ -3170,10 +3142,6 @@ html{
     margin-right: 5rem;
   }
 
-  .md\:mt-6 {
-    margin-top: 1.5rem;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -3184,10 +3152,6 @@ html{
 
   .md\:min-w-\[900px\] {
     min-width: 900px;
-  }
-
-  .md\:max-w-7xl {
-    max-width: 80rem;
   }
 
   .md\:max-w-96 {
@@ -3216,10 +3180,6 @@ html{
 
   .md\:gap-4 {
     gap: 1rem;
-  }
-
-  .md\:gap-8 {
-    gap: 2rem;
   }
 
   .md\:px-0 {

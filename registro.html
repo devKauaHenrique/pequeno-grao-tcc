@@ -73,15 +73,15 @@
 
             <!--INÍCIO HEADER MOBILE-->
             <div id="menu"
-    class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
-    
-    <!-- Div para agrupar os links e botões -->
-    <div id="menu-content">
-        <a href="index.html" class="text-white block px-3 mt-1 py-1">Início</a>
-        <a href="blog.html" class="text-white block px-3 py-1">Blog</a>
-        <a href="brecho.html" class="text-white block px-3 mb-2 py-1">Brechó</a>
-    </div>
-</div>
+                class="bg-custom-transparent fixed inset-0 z-50 hidden md:hidden px-2 pt-2 pb-3 mt-16 sm:px-3 text-center text-xl">
+
+                <!-- Div para agrupar os links e botões -->
+                <div id="menu-content">
+                    <a href="index.html" class="text-white block px-3 mt-1 py-1">Início</a>
+                    <a href="blog.html" class="text-white block px-3 py-1">Blog</a>
+                    <a href="brecho.html" class="text-white block px-3 mb-2 py-1">Brechó</a>
+                </div>
+            </div>
             <!--FIM HEADER MOBILE-->
 
         </nav>
@@ -91,35 +91,44 @@
             <form action="" class="bg-salmao rounded-xl px-6 py-6 w-full md:max-w-96 flex flex-col">
                 <div class="flex flex-col gap-1 mb-1">
                     <label for="" class="font-bold text-lg">Nome:</label>
-                    <input class="w-full rounded-lg outline-none" type="text" name="nome" placeholder="Digite seu nome" onchange="onChangeName()" id="name">
+                    <input class="w-full rounded-lg outline-none" type="text" name="nome" placeholder="Digite seu nome"
+                        onchange="onChangeName()" id="name">
                     <div><span class="error" id="name-required-error">Nome é obrigatório!</span></div>
                 </div>
                 <div class="flex flex-col gap-1 mb-1">
                     <label class="font-bold text-lg" for="">Email</label>
-                    <input class="w-full rounded-lg outline-none" type="email" name="email" placeholder="Digite seu email" onchange="onChangeEmail()" id="email">
+                    <input class="w-full rounded-lg outline-none" type="email" name="email"
+                        placeholder="Digite seu email" onchange="onChangeEmail()" id="email">
                     <div><span class="error" id="email-required-error">Email é obrigatório!</span></div>
                     <div><span class="error" id="email-invalid-error">Email inválido!</span></div>
                 </div>
                 <div class="flex flex-col gap-1 mb-1">
                     <label class="font-bold text-lg" for="">Senha</label>
-                    <input class="w-full rounded-lg outline-none" type="password" name="password" placeholder="Digite sua senha" onchange="onChangePassword()" id="password">
+                    <input class="w-full rounded-lg outline-none" type="password" name="password"
+                        placeholder="Digite sua senha" onchange="onChangePassword()" id="password">
                     <div><span class="error" id="password-required-error">Senha é obrigatório!</span></div>
-                    <div><span class="error" id="password-min-length-error">Senha deve ter pelo menos 6 caracteres!</span></div>
+                    <div><span class="error" id="password-min-length-error">Senha deve ter pelo menos 6
+                            caracteres!</span></div>
                 </div>
                 <div class="flex flex-col gap-1 mb-2">
                     <label class="font-bold text-lg" for="">Confirmar senha</label>
-                    <input class="w-full rounded-lg outline-none" type="password" name="password" placeholder="Digite sua senha" onchange="onChangeConfirmPassword()" id="confirmPassword">
+                    <input class="w-full rounded-lg outline-none" type="password" name="password"
+                        placeholder="Digite sua senha" onchange="onChangeConfirmPassword()" id="confirmPassword">
                     <div><span class="error" id="password-doesnt-match-error">As senhas não são iguais!</span></div>
                 </div>
                 <div>
-                    <button type="button" disabled="true" onclick="register()" class="font-semibold text-lg text-center w-full bg-transparent border bg-white text-salmao rounded-lg mb-3" id="register-button">
+                    <button type="button" disabled="true" onclick="register()"
+                        class="font-semibold text-lg text-center w-full bg-transparent border bg-white text-salmao rounded-lg mb-3"
+                        id="register-button">
                         Registrar
                     </button>
                 </div>
                 <div>
-                    <button type="button" id="login-button" class="font-bold text-lg text-center w-full bg-transparent border border-white text-white rounded-lg" onclick="login()">
+                    <button type="button" id="login-button"
+                        class="font-bold text-lg text-center w-full bg-transparent border border-white text-white rounded-lg"
+                        onclick="login()">
                         Login
-                    </button> 
+                    </button>
                 </div>
             </form>
         </div>
@@ -152,7 +161,9 @@
                 <h2 class="font-bold text-2xl text-white">Entre em contato</h2>
                 <div class="flex items-center font-semibold gap-3 md:gap-2">
                     <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
-                    <a class="text-white text-xl md:text-base" href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11) 95373-6849</a>
+                    <a class="text-white text-xl md:text-base"
+                        href="https://api.whatsapp.com/send/?phone=5511953736849&text=Olá%20gostaria%20de%20saber%20mais%20sobre o%20Pequeno Grão,%20poderia falar%20com%20o%20Kauã?">(11)
+                        95373-6849</a>
                 </div>
                 <div class="flex items-center gap-3 font-semibold md:gap-2">
                     <i class="fa-regular fa-envelope text-white text-4xl md:text-2xl"></i>
@@ -160,7 +171,8 @@
                 </div>
                 <div class="flex items-center gap-3 font-semibold md:gap-2">
                     <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
-                    <a class="text-white text-xl md:text-base" href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
+                    <a class="text-white text-xl md:text-base"
+                        href="https://www.instagram.com/_pequenograo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@pequeno_grao</a>
                 </div>
             </div>
         </div>
