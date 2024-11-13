@@ -2351,6 +2351,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -2591,6 +2596,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-salmao-escuro {
+  --tw-text-opacity: 1;
+  color: rgb(173 125 68 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3160,6 +3170,10 @@ html{
 
   .md\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
   }
 
   .md\:flex-row {

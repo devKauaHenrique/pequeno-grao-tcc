@@ -44,4 +44,5 @@ a#link:hover::before{
 
 #ativo.scrolled{
     background-color: black;
+    transition: ease-in 0.35s;
 }

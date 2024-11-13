@@ -88,37 +88,31 @@
         <!--FIM HEADER-->
 
         <div class="flex justify-center items-center h-screen-minus-header-1 w-full px-6">
-            <form action="" class="bg-salmao rounded-xl px-6 py-6 w-full md:max-w-96 flex flex-col">
-                <div class="flex flex-col gap-1 mb-1">
-                    <label for="" class="font-bold text-lg">Nome:</label>
-                    <input class="w-full rounded-lg outline-none" type="text" name="nome" placeholder="Digite seu nome"
+            <form action="" class="bg-transparent rounded-xl px-6 py-6 w-full md:max-w-lg flex flex-col wrapper">
+                <div class="flex flex-col gap-2 mt-2 md:mt-4 mb-2">
+                    <label for="nome" class="font-semibold text-xl text-white">Nome:</label>
+                    <input class="w-full rounded-lg outline-none bg-transparent input-box text-white" type="text" name="nome" placeholder="Digite seu nome"
                         onchange="onChangeName()" id="name">
                     <div><span class="error" id="name-required-error">Nome é obrigatório!</span></div>
                 </div>
-                <div class="flex flex-col gap-1 mb-1">
-                    <label class="font-bold text-lg" for="">Email</label>
-                    <input class="w-full rounded-lg outline-none" type="email" name="email"
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold text-xl text-white" for="email">Email</label>
+                    <input class="w-full rounded-lg outline-none bg-transparent input-box text-white" type="email" name="email"
                         placeholder="Digite seu email" onchange="onChangeEmail()" id="email">
                     <div><span class="error" id="email-required-error">Email é obrigatório!</span></div>
                     <div><span class="error" id="email-invalid-error">Email inválido!</span></div>
                 </div>
-                <div class="flex flex-col gap-1 mb-1">
-                    <label class="font-bold text-lg" for="">Senha</label>
-                    <input class="w-full rounded-lg outline-none" type="password" name="password"
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold text-xl text-white" for="password">Senha</label>
+                    <input class="w-full rounded-lg outline-none bg-transparent input-box text-white" type="password" name="password"
                         placeholder="Digite sua senha" onchange="onChangePassword()" id="password">
                     <div><span class="error" id="password-required-error">Senha é obrigatório!</span></div>
                     <div><span class="error" id="password-min-length-error">Senha deve ter pelo menos 6
                             caracteres!</span></div>
                 </div>
-                <div class="flex flex-col gap-1 mb-2">
-                    <label class="font-bold text-lg" for="">Confirmar senha</label>
-                    <input class="w-full rounded-lg outline-none" type="password" name="password"
-                        placeholder="Digite sua senha" onchange="onChangeConfirmPassword()" id="confirmPassword">
-                    <div><span class="error" id="password-doesnt-match-error">As senhas não são iguais!</span></div>
-                </div>
                 <div>
                     <button type="button" disabled="true" onclick="register()"
-                        class="font-semibold text-lg text-center w-full bg-transparent border bg-white text-salmao rounded-lg mb-3"
+                        class="font-semibold text-lg text-center w-full bg-transparent border text-white rounded-lg mb-3"
                         id="register-button">
                         Registrar
                     </button>
@@ -137,8 +131,8 @@
     <!--FIM SEÇÃO PRINCIPAL-->
 
     <!--INÍCIO FOOTER-->
-    <footer class="w-full h-full bg-salmao flex justify-center md:items-center py-12 px-8">
-        <div class="flex flex-col md:flex-row gap-16">
+    <footer class="w-full h-full bg-salmao flex justify-center md:items-center py-6 md:py-12 px-8">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-16">
             <div class="flex flex-col items-center text-center gap-4">
                 <h2 class="font-bold text-2xl text-white">Meios de pagamento</h2>
                 <div class="flex gap-6 justify-center md:gap-2 flex-wrap">

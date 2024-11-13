@@ -96,17 +96,10 @@ function isFormValid(){
         return false;
     }
 
-    const confirmPassword = form.confirmPassword().value;
-    if(password != confirmPassword){
-        return false;
-    }
-
     return true;
 }
 
 const form = {
-    confirmPassword: () => document.getElementById('confirmPassword'),
-    confirmPasswordDoesntMatchError: () => document.getElementById('password-doesnt-match-error'),
     email: () => document.getElementById("email"),
     emailInvalidError: () => document.getElementById("email-invalid-error"),
     emailRequiredError: () => document.getElementById("email-required-error"),

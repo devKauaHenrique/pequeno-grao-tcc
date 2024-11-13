@@ -89,30 +89,31 @@
         <!--FIM HEADER-->
 
         <div class="flex justify-center items-center h-screen-minus-header-1 w-full px-6">
-            <form action="" class="bg-salmao rounded-xl px-6 py-6 w-full md:max-w-96 flex flex-col">
-                <div class="flex flex-col gap-1 mb-2">
-                    <label class="font-bold text-lg" for="">Email</label>
-                    <input class="w-full rounded-lg outline-none" type="email" name="email"
+            <form action="" class="bg-transparent rounded-xl px-10 py-6 w-full md:max-w-lg flex flex-col wrapper">
+                <h1 class="text-center font-bold text-4xl text-white">Login</h1>
+                <div class="flex flex-col gap-2 mt-4 mb-2">
+                    <label class="font-semibold text-xl text-white" for="email">Email</label>
+                    <input class="w-full rounded-lg outline-none bg-transparent input-box text-white" type="email" name="email"
                         placeholder="Digite seu email" onchange="onChangeEmail()" id="email">
                     <div><span class="error" id="email-required-error">Email é obrigatório!</span></div>
                     <div><span class="error" id="email-invalid-error">Email inválido!</span></div>
                 </div>
-                <div class="flex flex-col gap-1 mb-6">
-                    <label class="font-bold text-lg" for="">Senha</label>
-                    <input class="w-full rounded-lg outline-none" type="password" name="password"
+                <div class="flex flex-col gap-2 mb-6">
+                    <label class="font-semibold text-xl text-white" for="password">Senha</label>
+                    <input class="w-full rounded-lg outline-none bg-transparent input-box text-white" type="password" name="password"
                         placeholder="Digite sua senha" onchange="onChangePassword()" id="password">
                     <div><span class="error" id="password-required-error">Senha é obrigatório!</span></div>
                 </div>
                 <div>
                     <button type="button" disabled="true" id="login-button"
-                        class="font-bold text-lg text-center w-full mb-4 bg-white text-salmao rounded-lg"
+                        class="font-semibold text-lg text-center w-full mb-4 bg-transparent text-white rounded-lg"
                         onclick="login()">
                         Entrar
                     </button>
                 </div>
                 <div>
-                    <button type="button"
-                        class="font-semibold text-lg text-center w-full bg-transparent border border-white text-white rounded-lg"
+                    <button type="button" id="btn-registrar"
+                        class="font-semibold text-lg text-center w-full text-white rounded-lg"
                         onclick="register()">
                         Registrar
                     </button>

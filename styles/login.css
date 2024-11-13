@@ -7,6 +7,96 @@ button[disabled]{
 }
 
 .error{
-    color: red;
+    color: rgba(255, 0, 0, 0.65);
+    font-weight: 600;
     display: none;
+}
+
+body{
+    background: url('../assets/bebe-login-3.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    border: 2px solid rgba(255, 255, 255, .5);
+    transition: ease-in-out 0.4s; 
+}
+
+.wrapper:hover{
+    box-shadow: #D4AA78 0px 1px 10px;
+}
+
+.input-box{
+    border: 2px solid rgba(255, 255, 255, .9);
+}
+
+input{
+    transition: ease-in-out 0.5s;   
+}
+
+input::placeholder{
+    color: white;
+    font-weight: 500;
+}
+
+input:focus, input:not(:placeholder-shown), input:valid{
+    background: transparent;
+}
+
+input:focus{
+    box-shadow: #D4AA78 0px 1px 10px;
+}
+
+#btn-registrar{
+    background: transparent;
+    border: 2px solid white;
+    transition: ease-in-out 0.7s;
+}
+
+#btn-registrar:hover{
+    background: #D4AA78;
+    border: 2px solid #D4AA78;
+}
+
+#register-button{
+    background: transparent;
+    border: 2px solid white;
+    transition: ease-in-out 0.7s;
+    pointer-events: none;
+}
+
+#register-button:not([disabled]){
+    pointer-events: auto;
+}
+
+#register-button:hover{
+    background: #D4AA78;
+    border: 2px solid #D4AA78;
+}
+
+#login-button{
+    background: transparent;
+    border: 2px solid white;
+    pointer-events: none;
+    transition: ease-in-out 0.7s;
+}
+
+#login-button:not([disabled]){
+    pointer-events: auto;
+}
+
+#login-button:hover{
+    background: #D4AA78;
+    border: 2px solid #D4AA78;
+}   
+
+@media screen and (max-width: 768px){
+    body{
+        background: url('../assets/bebe-login-3.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
 }
